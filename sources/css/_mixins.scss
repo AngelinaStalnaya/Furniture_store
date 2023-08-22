@@ -1,0 +1,591 @@
+@import "_variables.scss";
+
+
+@mixin primary_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: $primary;
+  color: $white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+
+
+  &:focus {
+    background-color: $pink_light;
+    border: 2px solid $primary_shade;
+  }
+
+  &:hover {
+    background-color: $primary_light;
+  }
+
+  &:active {
+    background-color: $primary_shade;
+  }
+
+  &:disabled {
+    background-color: $md_grey;
+    color: $grey;
+  }
+}
+
+@mixin secondary_btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid $primary;
+  color: $primary;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+
+
+  &:focus {
+    background-color: $primary_light;
+    border: 2px solid $primary;
+    color: $white;
+  }
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $primary_shade;
+    color: $white;
+  }
+}
+
+@mixin txt_link_light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $grey;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  gap: 10px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+
+  &:focus {
+    color: $primary_shade;
+    background-color: $pink_violet;
+    padding: 10px;
+  }
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:active {
+    color: $primary_shade;
+  }
+}
+
+@mixin txt_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  gap: 10px;
+  padding: 10px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+
+  &:focus {
+    color: $black;
+    background-color: $pink_violet;
+    padding: 10px;
+  }
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:active {
+    color: $primary_shade;
+  }
+}
+
+@mixin arrow {
+  width: 32px;
+  height: 32px;
+
+  & path,
+  & circle {
+    stroke: $primary;
+    fill: none;
+    transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+  }
+
+  &:focus {
+    & path {
+      stroke: $white;
+    }
+
+    & circle {
+      stroke: $primary;
+      fill: $primary_light;
+    }
+  }
+
+  &:hover {
+    & path {
+      stroke: $white;
+    }
+
+    & circle {
+      fill: $primary;
+      stroke: none;
+    }
+  }
+
+  &:active {
+    & path {
+      stroke: $white;
+    }
+
+    & circle {
+      fill: $primary_shade;
+      stroke: none;
+    }
+  }
+
+  &:disabled {
+    & path {
+      stroke: $grey;
+    }
+
+    & circle {
+      stroke: $grey;
+    }
+  }
+}
+
+@mixin arrow_btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  color: $primary;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+
+  & svg {
+    width: 22px;
+    height: 22px;
+    transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+  }
+
+  &:focus {
+    color: $primary;
+    border-bottom: 2px solid $primary;
+
+    & svg {
+      & path {
+        stroke: $white;
+      }
+
+      & circle {
+        stroke: $primary;
+        fill: $primary_light;
+      }
+    }
+  }
+
+  &:hover {
+    color: $primary;
+    border-bottom: 2px solid $primary;
+
+    & svg {
+      & path {
+        stroke: $white;
+      }
+
+      & circle {
+        fill: $primary;
+        stroke: none;
+      }
+    }
+  }
+
+  &:active {
+    color: $primary;
+    border-bottom: 2px solid $primary_shade;
+
+    & svg {
+      & path {
+        stroke: $white;
+      }
+
+      & circle {
+        fill: $primary_shade;
+        stroke: none;
+      }
+    }
+  }
+
+}
+
+@mixin exit {
+  width: 16px;
+  height: 16px;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+
+  & path {
+    fill: $grey;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:focus {
+    & path {
+      fill: $primary_shade;
+    }
+
+    & rect {
+      fill: $pink_violet;
+    }
+  }
+
+  &:hover {
+    & path {
+      fill: $primary;
+    }
+  }
+
+  &:active {
+    & path {
+      fill: $primary_shade;
+    }
+  }
+}
+
+@mixin social {
+  width: 36px;
+  height: 36px;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+
+  & path {
+    fill: $grey;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:focus {
+    & path {
+      fill: $white;
+    }
+
+    & rect {
+      fill: $primary_light;
+    }
+
+  }
+
+  &:hover {
+    & path {
+      fill: $primary;
+    }
+  }
+
+  &:active {
+    & path {
+      fill: $primary_shade;
+    }
+  }
+}
+
+@mixin checkbox {
+  width: 20px;
+  height: 20px;
+
+  & #Frame {
+    fill: $white;
+    stroke: $grey;
+  }
+
+  &__active {
+    & #Box {
+      fill: $primary;
+    }
+
+    & #Path {
+      stroke: $white;
+    }
+  }
+}
+
+@mixin search_input {
+  max-height: 60px;
+  border-radius: 10px 0 0 10px;
+  background-color: $grey_light;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $grey;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+
+
+  & search__svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+
+    & path {
+      fill: $grey;
+      transition: fill 0.3s ease-in-out;
+    }
+  }
+
+
+  & search__arrow {
+
+    & path,
+    & circle {
+      stroke: $primary
+    }
+  }
+
+  &:focus {
+    background-color: $pink_light;
+    border: 2px solid $primary;
+  }
+
+  &:hover {
+    background-color: $md_grey;
+  }
+
+  &:active {
+    background-color: $grey_light;
+    color: $black;
+
+    & search__svg {
+      & path {
+        fill: $primary;
+      }
+    }
+  }
+
+
+}
+
+@mixin price {
+  max-width: 86px;
+  max-height: 30px;
+  color: $grey_shade;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 13px;
+  border-radius: 2px;
+  border: 1px solid $grey;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:focus {
+    border: 1px solid $primary;
+    background-color: $pink_violet;
+
+  }
+
+  &:hover {
+    border: 1px solid $primary;
+  }
+
+  &:active {
+    border: 1px solid $primary_shade;
+  }
+}
+
+@mixin phone {
+  max-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $secondary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  & svg path {
+    fill: $secondary;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:focus {
+    color: $secondary;
+    background-color: $bone;
+
+    & svg path {
+      fill: $secondary;
+    }
+  }
+
+  &:hover {
+    color: $secondary_light;
+
+    & svg path {
+      fill: $secondary_light;
+    }
+  }
+
+  &:active {
+    color: $secondary_shade;
+
+    & svg path {
+      fill: $secondary_shade;
+    }
+  }
+}
+
+@mixin profile {
+  width: 34px;
+  height: 36px;
+
+  & path {
+    fill: $primary;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:focus {
+
+    & path {
+      fill: $white;
+    }
+
+    & rect {
+      fill: $primary_light;
+    }
+  }
+
+  &:hover {
+    & path {
+      fill: $primary_light;
+    }
+  }
+
+  &:active {
+    & path {
+      fill: $primary_shade;
+    }
+  }
+}
+
+@mixin shopping_card {
+
+  & rect {
+    fill: none;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  & path {
+    fill: $primary;
+  }
+
+  &:focus {
+    & rect {
+      fill: $primary_light;
+    }
+
+    & path {
+       fill:  $white;
+    }
+  }
+
+  &:hover {
+    & path {
+      fill: $primary_light;
+    }
+  }
+
+  &:active {
+    & path {
+      fill: $primary_shade;
+    }
+  }
+}
+
+@mixin input {
+  max-height: 54px;
+  border-radius: 10px;
+  background-color: $grey_light;
+  color: $grey;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 18px;
+  transition: border 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+
+  &:focus {
+    border:  1px solid $primary;
+    background-color: $pink_light;
+  }
+
+  &:hover {
+    background-color: $md_grey;
+  }
+
+  &:active {
+    border: 1px solid $green_input;
+    color: $black;
+  }
+}
+
+@mixin pagination_btn {
+  display: flex;
+  max-width: 32px;
+  max-height: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 2px solid $primary;
+  color: $primary;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:focus {
+    background-color: $primary_light;
+    color: $white;
+  }
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $primary_shade;
+    color: $white;
+    border: 2px solid $primary_shade;
+  }
+}

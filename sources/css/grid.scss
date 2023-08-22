@@ -1,0 +1,13 @@
+@import "_mixins.scss";
+
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  font-family: 'TTFirsNeue', sans-serif;
+}
+
