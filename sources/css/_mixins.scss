@@ -1,11 +1,15 @@
 @import "_variables.scss";
 
 
+// ui-kit
+
+
 @mixin primary_btn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding: 22px 0;
   border-radius: 10px;
   background-color: $primary;
   color: $white;
@@ -13,6 +17,7 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 100%;
+  border: 1px solid transparent;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
 
 
@@ -40,6 +45,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding: 19px 32px;
   border-radius: 10px;
   background-color: transparent;
   border: 2px solid $primary;
@@ -82,7 +88,7 @@
   &:focus {
     color: $primary_shade;
     background-color: $pink_violet;
-    padding: 10px;
+    padding: 2px 10px;
   }
 
   &:hover {
@@ -101,15 +107,14 @@
   color: $black;
   font-size: 16px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
   gap: 10px;
-  padding: 10px;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
 
   &:focus {
     color: $black;
     background-color: $pink_violet;
-    padding: 10px;
+    padding: 0 10px;
   }
 
   &:hover {
@@ -179,18 +184,23 @@
 @mixin arrow_btn {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 5px;
   color: $primary;
   font-size: 16px;
   font-weight: 700;
   line-height: 120%;
+  border-bottom: 2px solid transparent;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
 
   & svg {
-    width: 22px;
-    height: 22px;
-    transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+
+    & path,
+    & circle {
+      stroke: $primary;
+      fill: none;
+      transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+    }
   }
 
   &:focus {
@@ -226,7 +236,7 @@
   }
 
   &:active {
-    color: $primary;
+    color: $primary_shade;
     border-bottom: 2px solid $primary_shade;
 
     & svg {
@@ -240,6 +250,7 @@
       }
     }
   }
+
 
 }
 
@@ -277,9 +288,8 @@
 }
 
 @mixin social {
-  width: 36px;
-  height: 36px;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  width: 30px;
+  height: 30px;
 
   & path {
     fill: $grey;
@@ -288,13 +298,8 @@
 
   &:focus {
     & path {
-      fill: $white;
-    }
-
-    & rect {
       fill: $primary_light;
     }
-
   }
 
   &:hover {
@@ -310,45 +315,31 @@
   }
 }
 
-@mixin checkbox {
-  width: 20px;
-  height: 20px;
-
-  & #Frame {
-    fill: $white;
-    stroke: $grey;
-  }
-
-  &__active {
-    & #Box {
-      fill: $primary;
-    }
-
-    & #Path {
-      stroke: $white;
-    }
-  }
-}
-
 @mixin search_input {
-  max-height: 60px;
+  min-height: 60px;
   border-radius: 10px 0 0 10px;
   background-color: $grey_light;
-  padding: 0 32px;
+  padding: 9px 32px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  color: $grey;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 120%;
-  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 
+  & input {
+    color: $grey;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    transition: color 0.3s ease-in-out;
 
-  & search__svg {
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  & svg {
     width: 20px;
     height: 20px;
-    margin-right: 7px;
 
     & path {
       fill: $grey;
@@ -357,7 +348,9 @@
   }
 
 
-  & search__arrow {
+  & button svg {
+    width: 32px;
+    height: 32px;
 
     & path,
     & circle {
@@ -365,7 +358,7 @@
     }
   }
 
-  &:focus {
+  &:focus-within {
     background-color: $pink_light;
     border: 2px solid $primary;
   }
@@ -376,16 +369,15 @@
 
   &:active {
     background-color: $grey_light;
-    color: $black;
 
-    & search__svg {
-      & path {
-        fill: $primary;
-      }
+    & input {
+      color: $black;
+    }
+
+    & svg path {
+      fill: $primary;
     }
   }
-
-
 }
 
 @mixin price {
@@ -421,13 +413,18 @@
 @mixin phone {
   max-height: 22px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: $secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 100%;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  & svg {
+    width: 22px;
+    height: 22px;
+  }
 
   & svg path {
     fill: $secondary;
@@ -461,9 +458,6 @@
 }
 
 @mixin profile {
-  width: 34px;
-  height: 36px;
-
   & path {
     fill: $primary;
     transition: fill 0.3s ease-in-out;
@@ -504,13 +498,17 @@
     fill: $primary;
   }
 
+  & #Count {
+    fill: $white;
+  }
+
   &:focus {
     & rect {
       fill: $primary_light;
     }
 
     & path {
-       fill:  $white;
+      fill: $white;
     }
   }
 
@@ -518,17 +516,25 @@
     & path {
       fill: $primary_light;
     }
+
+    & #Count {
+      fill: $white;
+    }
   }
 
   &:active {
     & path {
       fill: $primary_shade;
     }
+
+    & #Count {
+      fill: $white;
+    }
   }
 }
 
 @mixin input {
-  max-height: 54px;
+  min-height: 54px;
   border-radius: 10px;
   background-color: $grey_light;
   color: $grey;
@@ -539,11 +545,13 @@
   justify-content: center;
   align-items: flex-start;
   padding-left: 18px;
+  outline: none;
+  border: 1px solid transparent;
   transition: border 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
 
   &:focus {
-    border:  1px solid $primary;
+    border: 1px solid $primary;
     background-color: $pink_light;
   }
 
@@ -588,4 +596,86 @@
     color: $white;
     border: 2px solid $primary_shade;
   }
+}
+
+
+//  layout
+
+@mixin section_padding {
+  padding-left: 320px;
+  padding-right: 320px;
+
+  @media (max-width: 1440px) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+@mixin section_title {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+@mixin subsection_title {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+@mixin section_descr {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin price_color {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  color: $secondary
+}
+
+@mixin price_grey {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  color: $grey;
+}
+
+@mixin btn_reset {
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+@mixin list_reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin section_settings {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 32px;
 }

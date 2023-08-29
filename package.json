@@ -9,8 +9,8 @@
   "author": "Angelina Stalnaya",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.22.10",
-    "@babel/preset-env": "^7.22.10",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
     "babel-loader": "^9.1.3",
     "browser-sync": "^2.29.3",
     "del": "^6.1.1",
@@ -26,6 +26,7 @@
     "gulp-notify": "^4.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-svg-sprite": "^2.0.3",
+    "gulp-svgmin": "^4.1.0",
     "gulp-uglify-es": "^3.0.0"
   }
 }

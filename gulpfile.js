@@ -5,6 +5,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
 const svgSprite = require('gulp-svg-sprite');
 const image = require('gulp-image');
+const svgMin = require('gulp-svgmin');
 const babel = require('gulp-babel');
 const notify = require('gulp-notify');
 const uglify = require('gulp-uglify-es').default;
@@ -79,10 +80,15 @@ const images = () => {
   return src([
       'sources/img/**/*.png',
       'sources/img/**/*.jpg',
-      'sources/img/**/*.jpeg',
-      'sources/img/*.svg'
+      'sources/img/**/*.jpeg'
   ])
   .pipe(image())
+  .pipe(dest('dist/img'))
+}
+
+const svgmin = () => {
+  return src('sources/img/*.svg')
+  .pipe(svgMin())
   .pipe(dest('dist/img'))
 }
 
@@ -116,8 +122,7 @@ watch('sources/js/**/*.js', scripts);
 watch('sources/fonts/**/*.woff2', fonts);
 watch('sources/fonts/**/*.woff', fonts);
 
-
 exports.styles = styles;
 exports.scripts = scripts;
 exports.htmlMinify = htmlMinify;
-exports.default = series(clean, fonts, htmlMinify, scripts, styles, images, svgSprites, watchFiles);
+exports.default = series(clean, fonts, htmlMinify, scripts, styles, images, svgmin, svgSprites, watchFiles);
