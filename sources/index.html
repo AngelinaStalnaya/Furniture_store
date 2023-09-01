@@ -96,7 +96,7 @@
           <path
             d="M17.8187 16.0625L14.607 13.3156C15.5516 12.0945 16.0625 10.6016 16.0625 9.03125C16.0625 7.15156 15.3289 5.38906 14.0023 4.06016C12.6758 2.73125 10.9086 2 9.03125 2C7.15391 2 5.38672 2.73359 4.06016 4.06016C2.73125 5.38672 2 7.15156 2 9.03125C2 10.9086 2.73359 12.6758 4.06016 14.0023C5.38672 15.3312 7.15156 16.0625 9.03125 16.0625C10.6016 16.0625 12.0922 15.5516 13.3133 14.6094L16.5249 17.3539C16.5428 17.3718 16.564 17.3859 16.5873 17.3956C16.6106 17.4053 16.6356 17.4102 16.6609 17.4102C16.6861 17.4102 16.7111 17.4053 16.7344 17.3956C16.7578 17.3859 16.7789 17.3718 16.7968 17.3539L17.8187 16.3344C17.8365 16.3165 17.8507 16.2953 17.8604 16.272C17.87 16.2487 17.875 16.2237 17.875 16.1984C17.875 16.1732 17.87 16.1482 17.8604 16.1249C17.8507 16.1015 17.8365 16.0803 17.8187 16.0625ZM12.7438 12.7438C11.75 13.7352 10.4328 14.2812 9.03125 14.2812C7.62969 14.2812 6.3125 13.7352 5.31875 12.7438C4.32734 11.75 3.78125 10.4328 3.78125 9.03125C3.78125 7.62969 4.32734 6.31016 5.31875 5.31875C6.3125 4.32734 7.62969 3.78125 9.03125 3.78125C10.4328 3.78125 11.7523 4.325 12.7438 5.31875C13.7352 6.3125 14.2812 7.62969 14.2812 9.03125C14.2812 10.4328 13.7352 11.7523 12.7438 12.7438Z" />
         </svg>
-        <input type="search" class="input__field" name="Фильтр" id="Поисковой фильтр" placeholder="Я хочу купить...">
+        <input type="search" class="input__field" name="Filter" id="Search_filter" placeholder="Я хочу купить...">
         <button class="form__btn">
           <svg class="btn__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 11L19 16L14 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -141,14 +141,14 @@
       </h2>
       <ul class="special_offers__list">
         <li class="list__item">
-          <span class="item__tag">
+          <div class="item__tag">
             <svg class="tag__svg" width="92" height="34">
               <use xlink:href="img/sprite.svg#svg--price-bg"></use>
             </svg>
             <p class="tag__price">
               -9 000
             </p>
-          </span>
+          </div>
           <picture class="item__img">
             <source srcset="img/so-1-1920.png" type="image/png" media="(min-width:1441px)">
             <source srcset="img/so-1-1024.png" type="image/png" media="(min-width:993px)">
@@ -170,14 +170,14 @@
           </button>
         </li>
         <li class="list__item">
-          <span class="item__tag">
+          <div class="item__tag">
             <svg class="tag__svg" width="92" height="34">
               <use xlink:href="img/sprite.svg#svg--price-bg"></use>
             </svg>
             <p class="tag__price">
               -10 000
             </p>
-          </span>
+          </div>
           <picture class="item__img">
             <source srcset="img/so-2-1920.png" type="image/png" media="(min-width:1441px)">
             <source srcset="img/so-2-1024.png" type="image/png" media="(min-width:993px)">
@@ -200,14 +200,14 @@
           <img class="item__ability" src="img/so-2-1-1920.png" alt="Функционал товара">
         </li>
         <li class="list__item">
-          <span class="item__tag">
+          <div class="item__tag">
             <svg class="tag__svg" width="92" height="34">
               <use xlink:href="img/sprite.svg#svg--price-bg"></use>
             </svg>
             <p class="tag__price">
               -600
             </p>
-          </span>
+          </div>
           <picture class="item__img">
             <source srcset="img/so-3-1920.png" type="image/png" media="(min-width:1441px)">
             <source srcset="img/so-3-1024.png" type="image/png" media="(min-width:993px)">
@@ -230,15 +230,15 @@
         </li>
 
         <li class="list__item">
-          <span class="item__tag">
+          <div class="item__tag">
             <svg class="tag__svg" width="92" height="34">
               <use xlink:href="img/sprite.svg#svg--price-bg"></use>
             </svg>
             <p class="tag__price">
               -300
             </p>
-          </span>
-          <img src="img/so-4-320.png" alt="Предмет со скидкой">
+          </div>
+          <img class="item__img" src="img/so-4-320.png" alt="Предмет со скидкой">
 
           <h3 class="item__title">
             Мини-скульптура <br> “Oh my deer”
@@ -256,15 +256,15 @@
           </button>
         </li>
         <li class="list__item">
-          <span class="item__tag">
+          <div class="item__tag">
             <svg class="tag__svg" width="92" height="34">
               <use xlink:href="img/sprite.svg#svg--price-bg"></use>
             </svg>
             <p class="tag__price">
               -10 000
             </p>
-          </span>
-          <img src="img/so-5-320.png" alt="Предмет со скидкой">
+          </div>
+          <img class="item__img" src="img/so-5-320.png" alt="Предмет со скидкой">
           <h3 class="item__title">
             Диван вел-флок <br> “Z-85”
           </h3>
@@ -282,15 +282,15 @@
 
         </li>
         <li class="list__item">
-          <span class="item__tag">
+          <div class="item__tag">
             <svg class="tag__svg" width="92" height="34">
               <use xlink:href="img/sprite.svg#svg--price-bg"></use>
             </svg>
             <p class="tag__price">
               -700
             </p>
-          </span>
-          <img src="img/so-6-320.png" alt="Предмет со скидкой">
+          </div>
+          <img class="item__img" src="img/so-6-320.png" alt="Предмет со скидкой">
 
           <h3 class="item__title">
             Термометр + гидрометр “H-18”
@@ -316,12 +316,12 @@
       </h2>
       <ul class="high_rate__list">
         <li class="list__item">
-          <span class="item__rate">
+          <div class="item__rate">
             <svg class="rate__svg">
               <use xlink:href="img/sprite.svg#svg--star"></use>
             </svg>
             <p class="rate__num">5.0</p>
-          </span>
+          </div>
           <picture class="item__img">
             <source srcset="img/hr-1-1920.png" type="image/png" media="(min-width:441px)">
             <source srcset="img/hr-1-320.png" type="image/png" media="(min-width:0px)">
@@ -338,12 +338,12 @@
           </button>
         </li>
         <li class="list__item">
-          <span class="item__rate">
+          <div class="item__rate">
             <svg class="rate__svg">
               <use xlink:href="img/sprite.svg#svg--star"></use>
             </svg>
             <p class="rate__num">4.9</p>
-          </span>
+          </div>
           <picture class="item__img">
             <source srcset="img/hr-2-1920.png" type="image/png" media="(min-width:441px)">
             <source srcset="img/hr-2-320.png" type="image/png" media="(min-width:0px)">
@@ -360,12 +360,12 @@
           </button>
         </li>
         <li class="list__item">
-          <span class="item__rate">
+          <div class="item__rate">
             <svg class="rate__svg">
               <use xlink:href="img/sprite.svg#svg--star"></use>
             </svg>
             <p class="rate__num">4.8</p>
-          </span>
+          </div>
           <picture class="item__img">
             <source srcset="img/hr-3-1920.png" type="image/png" media="(min-width:441px)">
             <source srcset="img/hr-3-320.png" type="image/png" media="(min-width:0px)">
@@ -382,12 +382,12 @@
           </button>
         </li>
         <li class="list__item">
-          <span class="item__rate">
+          <div class="item__rate">
             <svg class="rate__svg">
               <use xlink:href="img/sprite.svg#svg--star"></use>
             </svg>
             <p class="rate__num">5.0</p>
-          </span>
+          </div>
           <picture class="item__img">
             <source srcset="img/hr-4-1920.png" type="image/png" media="(min-width:441px)">
             <source srcset="img/hr-4-320.png" type="image/png" media="(min-width:0px)">
@@ -404,12 +404,12 @@
           </button>
         </li>
         <li class="list__item">
-          <span class="item__rate">
+          <div class="item__rate">
             <svg class="rate__svg">
               <use xlink:href="img/sprite.svg#svg--star"></use>
             </svg>
             <p class="rate__num">4.8</p>
-          </span>
+          </div>
           <picture class="item__img">
             <source srcset="img/hr-5-1920.png" type="image/png" media="(min-width:441px)">
             <source srcset="img/hr-5-320.png" type="image/png" media="(min-width:0px)">
@@ -426,12 +426,12 @@
           </button>
         </li>
         <li class="list__item">
-          <span class="item__rate">
+          <div class="item__rate">
             <svg class="rate__svg">
               <use xlink:href="img/sprite.svg#svg--star"></use>
             </svg>
             <p class="rate__num">4.8</p>
-          </span>
+          </div>
           <picture class="item__img">
             <source srcset="img/hr-6-1920.png" type="image/png" media="(min-width:441px)">
             <source srcset="img/hr-6-320.png" type="image/png" media="(min-width:0px)">
@@ -448,12 +448,12 @@
           </button>
         </li>
         <li class="list__item">
-          <span class="item__rate">
+          <div class="item__rate">
             <svg class="rate__svg">
               <use xlink:href="img/sprite.svg#svg--star"></use>
             </svg>
             <p class="rate__num">4.8</p>
-          </span>
+          </div>
           <picture class="item__img">
             <source srcset="img/hr-7-1920.png" type="image/png" media="(min-width:441px)">
             <source srcset="img/hr-7-320.png" type="image/png" media="(min-width:0px)">
@@ -470,12 +470,12 @@
           </button>
         </li>
         <li class="list__item">
-          <span class="item__rate">
+          <div class="item__rate">
             <svg class="rate__svg">
               <use xlink:href="img/sprite.svg#svg--star"></use>
             </svg>
             <p class="rate__num">4.7</p>
-          </span>
+          </div>
           <picture class="item__img">
             <source srcset="img/hr-8-1920.png" type="image/png" media="(min-width:441px)">
             <source srcset="img/hr-8-320.png" type="image/png" media="(min-width:0px)">
@@ -590,7 +590,7 @@
             <li class="category__item"><a href="#" class="item__link">Тумбы</a></li>
             <li class="category__item"><a href="#" class="item__link">Комоды</a></li>
           </ul>
-          <h3 class="item__title">Тумбы и комоды</h3>
+          <h3 class="item__title">Тумбы и&nbsp;комоды</h3>
           <picture class="item__img">
             <source srcset="img/top-4-1920.png" type="image/png" media="(min-width:1441px)">
             <source srcset="img/top-4-1024.png" type="image/png" media="(min-width:441px)">
@@ -652,8 +652,7 @@
             <img src="img/useful-1-1920.jpg" alt="Интерьер">
           </picture>
           <p class="item__descr">
-            И&nbsp;нет сомнений, что сделанные на&nbsp;базе интернет-аналитики выводы представляют собой не&nbsp;что
-            иное?
+            И нет сомнений, что сделанные на базе интернет-аналитики выводы представляют собой нечто иное?
           </p>
           <button class="item__btn">Читать</button>
         </li>
@@ -674,25 +673,24 @@
         <li class="list__item">
           <picture class="item__img">
             <source srcset="img/useful-3-1024.jpg" type="image/jpg" media="(min-width:993px)">
-            <source srcset="img/useful-3-768.jpg" type="image/jpg" media="(min-width:441px)">
             <source srcset="img/useful-3-320.jpg" type="image/jpg" media="(min-width:0px)">
             <img src="img/useful-3-1024.jpg" alt="Интерьер">
           </picture>
           <p class="item__descr">
-            Ясность нашей позиции очевидна: укрепление и&nbsp;развитие внутренней структуры?
+            Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?
           </p>
           <button class="item__btn">Читать</button>
         </li>
 
         <li class="list__item">
-          <img src="img/useful-4-320.jpg" alt="Интерьер" class="item__img">
+          <img class="item__img" src="img/useful-4-320.jpg" alt="Интерьер">
           <p class="item__descr">
-            Прежде всего, консультация с&nbsp;широким активом однозначно фиксирует необходимость распределения?
+            Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?
           </p>
           <button class="item__btn">Читать</button>
         </li>
         <li class="list__item">
-          <img src="img/useful-5-320.jpg" alt="Интерьер" class="item__img">
+          <img class="item__img" src="img/useful-5-320.jpg" alt="Интерьер">
           <p class="item__descr">
             Как принято считать, некоторые особенности приносят несомненную пользу обществу?
           </p>
@@ -737,7 +735,7 @@
       <picture class="contact__img">
         <source srcset="img/form-pic-1920.png" type="image/png" media="(min-width:1441px)">
         <source srcset="img/form-pic-1024.png" type="image/png" media="(min-width:993px)">
-        <source srcset="img/form-pic-320.png" type="image/png" media="(min-width:441px)">
+        <source srcset="img/form-pic-768.png" type="image/png" media="(min-width:441px)">
         <img src="img/form-pic-1920.png" alt="Офисный уголок">
       </picture>
     </section>
@@ -802,7 +800,7 @@
     </p>
   </footer>
 
-  <script scr="app.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>

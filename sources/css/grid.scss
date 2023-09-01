@@ -36,6 +36,7 @@ body {
     grid-column: 1/ span 2;
     grid-row: 1;
     width: fit-content;
+    height: 100%;
     @include phone;
   }
 
@@ -132,7 +133,6 @@ body {
   }
 }
 
-
 .main_page {
   grid-column: 1;
   grid-row: 2;
@@ -147,6 +147,7 @@ body {
     min-height: 400px;
     background-image: url("img/hero-1920.jpg");
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     @include section_settings;
     padding: 76px 0;
@@ -322,7 +323,6 @@ body {
         padding-bottom: 30px;
       }
 
-
       .item__rate {
         position: absolute;
         display: flex;
@@ -377,6 +377,7 @@ body {
     min-height: 600px;
     background-image: url("img/advertisement-1920.jpg");
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     @include section_settings;
     padding: 150px 0;
@@ -551,6 +552,7 @@ body {
         .item__img {
           justify-self: flex-start;
           margin-bottom: 30px;
+          border-radius: 10px 10px 0 0;
         }
 
         .item__btn {
