@@ -591,13 +591,14 @@
 
 @mixin pagination_btn {
   display: flex;
-  max-width: 32px;
-  max-height: 32px;
+  min-width: 32px;
+  min-height: 32px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 10px;
   border: 2px solid $primary;
+  background-color: $white;
   color: $primary;
   text-align: center;
   font-size: 16px;
