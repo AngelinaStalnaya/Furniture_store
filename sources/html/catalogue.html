@@ -15,7 +15,7 @@
 
   <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
 
-  <title>Сотрудничество</title>
+  <title>Каталог</title>
 </head>
 
 <body>
@@ -127,8 +127,318 @@
     </div>
   </header>
 
-  <main class="cooperation">
-    <h2>Сотрудничество</h2>
+  <main class="catalogue">
+    <p class="catalogue__root">
+      <a href="#" class="root__link">Главная</a> / <a href="#" class="root__link">Каталог</a> / <a href="#"
+        class="root__link">Диваны</a> / <a href="#" class="root__link">Прямые диваны</a>
+    </p>
+    <div class="catalogue__filters">
+      <h2 class="filters__title"> Фильтровать по:</h2>
+      <form class="filters__form_color" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <h3 class="form__title">
+          Цвет
+        </h3>
+        <label class="form__input">
+          <input class="input__checkbox" type="checkbox" name="color" value="Коричневый">
+          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="20.2703" height="20" />
+            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
+            <rect class="Box" width="20.2703" height="20" rx="2" />
+            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
+          </svg>
+          <span class="input__text">Коричневый</span>
+        </label> <br>
+        <label class="form__input">
+          <input class="input__checkbox" type="checkbox" name="color" value="Черный">
+          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="20.2703" height="20" />
+            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
+            <rect class="Box" width="20.2703" height="20" rx="2" />
+            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
+          </svg>
+          <span class="input__text">Чёрный</span>
+        </label> <br>
+        <label class="form__input">
+          <input class="input__checkbox" type="checkbox" name="color" value="Синий">
+          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="20.2703" height="20" />
+            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
+            <rect class="Box" width="20.2703" height="20" rx="2" />
+            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
+          </svg>
+          <span class="input__text">Синий</span>
+        </label> <br>
+        <label class="form__input">
+          <input class="input__checkbox" type="checkbox" name="color" value="Белый">
+          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="20.2703" height="20" />
+            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
+            <rect class="Box" width="20.2703" height="20" rx="2" />
+            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
+          </svg>
+          <span class="input__text">Белый</span>
+        </label>
+      </form>
+      <form class="filters__form_category" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <h3 class="form__title"> Категория </h3>
+        <label class="form__input">
+          <input class="input__checkbox" type="checkbox" name="category" value="Диваны">
+          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="20.2703" height="20" />
+            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
+            <rect class="Box" width="20.2703" height="20" rx="2" />
+            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
+          </svg>
+          <span class="input__text">Диваны</span>
+        </label> <br>
+        <label class="form__input">
+          <input class="input__checkbox" type="checkbox" name="category" value="Кресла">
+          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="20.2703" height="20" />
+            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
+            <rect class="Box" width="20.2703" height="20" rx="2" />
+            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
+          </svg>
+          <span class="input__text">Кресла</span>
+        </label>
+      </form>
+      <form class="filters__form_price" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <h3 class="form__title">Цена</h3>
+        <label class="form__input">
+          <span class="input__text">от</span>
+          <input class="input__field" type="number" name="price" id="price__min">
+        </label>
+        <label class="form__input">
+          <span class="input__text">до</span>
+          <input class="input__field" type="number" name="price" id="price__max">
+        </label>
+      </form>
+    </div>
+    <h2 class="catalogue__title">
+      Каталог
+    </h2>
+    <ul class="catalogue__list">
+      <li class="list__item">
+        <div class="item__rate">
+          <svg class="rate__svg">
+            <use xlink:href="img/sprite.svg#svg--star"></use>
+          </svg>
+          <p class="rate__num">5.0</p>
+        </div>
+        <picture class="item__img">
+          <source srcset="img/hr-1-1920.png" type="image/png" media="(min-width:441px)">
+          <source srcset="img/hr-1-320.png" type="image/png" media="(min-width:0px)">
+          <img src="img/hr-1-1920.png" alt="Фото товара">
+        </picture>
+        <h3 class="item__title">
+          Диван кожаный <br> “R-94”
+        </h3>
+        <p class="item__price">
+          94 990 руб
+        </p>
+        <button class="item__btn">
+          Купить
+        </button>
+      </li>
+      <li class="list__item">
+        <div class="item__rate">
+          <svg class="rate__svg">
+            <use xlink:href="img/sprite.svg#svg--star"></use>
+          </svg>
+          <p class="rate__num">4.9</p>
+        </div>
+        <picture class="item__img">
+          <source srcset="img/hr-2-1920.png" type="image/png" media="(min-width:441px)">
+          <source srcset="img/hr-2-320.png" type="image/png" media="(min-width:0px)">
+          <img src="img/hr-2-1920.png" alt="Фото товара">
+        </picture>
+        <h3 class="item__title">
+          Диван апартековый <br> “T-75”
+        </h3>
+        <p class="item__price">
+          69 990 руб
+        </p>
+        <button class="item__btn">
+          Купить
+        </button>
+      </li>
+      <li class="list__item">
+        <div class="item__rate">
+          <svg class="rate__svg">
+            <use xlink:href="img/sprite.svg#svg--star"></use>
+          </svg>
+          <p class="rate__num">4.8</p>
+        </div>
+        <picture class="item__img">
+          <source srcset="img/hr-3-1920.png" type="image/png" media="(min-width:441px)">
+          <source srcset="img/hr-3-320.png" type="image/png" media="(min-width:0px)">
+          <img src="img/hr-3-1920.png" alt="Фото товара">
+        </picture>
+        <h3 class="item__title">
+          Диван тканевый <br> “D-31”
+        </h3>
+        <p class="item__price">
+          28 490 руб
+        </p>
+        <button class="item__btn">
+          Купить
+        </button>
+      </li>
+      <li class="list__item">
+        <div class="item__rate">
+          <svg class="rate__svg">
+            <use xlink:href="img/sprite.svg#svg--star"></use>
+          </svg>
+          <p class="rate__num">5.0</p>
+        </div>
+        <picture class="item__img">
+          <source srcset="img/hr-4-1920.png" type="image/png" media="(min-width:441px)">
+          <source srcset="img/hr-4-320.png" type="image/png" media="(min-width:0px)">
+          <img src="img/hr-4-1920.png" alt="Фото товара">
+        </picture>
+        <h3 class="item__title">
+          Диван велюровый <br> “Y-68”
+        </h3>
+        <p class="item__price">
+          22 990 руб
+        </p>
+        <button class="item__btn">
+          Купить
+        </button>
+      </li>
+      <li class="list__item">
+        <div class="item__rate">
+          <svg class="rate__svg">
+            <use xlink:href="img/sprite.svg#svg--star"></use>
+          </svg>
+          <p class="rate__num">4.8</p>
+        </div>
+        <picture class="item__img">
+          <source srcset="img/hr-5-1920.png" type="image/png" media="(min-width:441px)">
+          <source srcset="img/hr-5-320.png" type="image/png" media="(min-width:0px)">
+          <img src="img/hr-5-1920.png" alt="Фото товара">
+        </picture>
+        <h3 class="item__title">
+          Диван из шинила <br> “W-95”
+        </h3>
+        <p class="item__price">
+          22 990 руб
+        </p>
+        <button class="item__btn">
+          Купить
+        </button>
+      </li>
+      <li class="list__item">
+        <div class="item__rate">
+          <svg class="rate__svg">
+            <use xlink:href="img/sprite.svg#svg--star"></use>
+          </svg>
+          <p class="rate__num">4.8</p>
+        </div>
+        <picture class="item__img">
+          <source srcset="img/hr-6-1920.png" type="image/png" media="(min-width:441px)">
+          <source srcset="img/hr-6-320.png" type="image/png" media="(min-width:0px)">
+          <img src="img/hr-6-1920.png" alt="Фото товара">
+        </picture>
+        <h3 class="item__title">
+          Диван флоковый <br> “G-41”
+        </h3>
+        <p class="item__price">
+          17 990 руб
+        </p>
+        <button class="item__btn">
+          Купить
+        </button>
+      </li>
+      <li class="list__item">
+        <div class="item__rate">
+          <svg class="rate__svg">
+            <use xlink:href="img/sprite.svg#svg--star"></use>
+          </svg>
+          <p class="rate__num">4.8</p>
+        </div>
+        <picture class="item__img">
+          <source srcset="img/hr-7-1920.png" type="image/png" media="(min-width:441px)">
+          <source srcset="img/hr-7-320.png" type="image/png" media="(min-width:0px)">
+          <img src="img/hr-7-1920.png" alt="Фото товара">
+        </picture>
+        <h3 class="item__title">
+          Диван шиниловый <br> “V-43”
+        </h3>
+        <p class="item__price">
+          19 990 руб
+        </p>
+        <button class="item__btn">
+          Купить
+        </button>
+      </li>
+      <li class="list__item">
+        <div class="item__rate">
+          <svg class="rate__svg">
+            <use xlink:href="img/sprite.svg#svg--star"></use>
+          </svg>
+          <p class="rate__num">4.7</p>
+        </div>
+        <picture class="item__img">
+          <source srcset="img/hr-8-1920.png" type="image/png" media="(min-width:441px)">
+          <source srcset="img/hr-8-320.png" type="image/png" media="(min-width:0px)">
+          <img src="img/hr-8-1920.png" alt="Фото товара">
+        </picture>
+        <h3 class="item__title">
+          Диван велюровый <br> “S-99”
+        </h3>
+        <p class="item__price">
+          19 990 руб
+        </p>
+        <button class="item__btn">
+          Купить
+        </button>
+      </li>
+      <li class="list__item">
+        <div class="item__rate">
+          <svg class="rate__svg">
+            <use xlink:href="img/sprite.svg#svg--star"></use>
+          </svg>
+          <p class="rate__num">4.7</p>
+        </div>
+        <picture class="item__img">
+          <source srcset="img/hr-9-1920.png" type="image/png" media="(min-width:441px)">
+          <img src="img/hr-9-1920.png" alt="Фото товара">
+        </picture>
+        <h3 class="item__title">
+          Диван из кожзама “F-85”
+        </h3>
+        <p class="item__price">
+          26 990 руб
+        </p>
+        <button class="item__btn">
+          Купить
+        </button>
+      </li>
+    </ul>
+    <span class="catalogue__pagination">
+      <button class="pagination__btn">1</button>
+      <button class="pagination__btn">2</button>
+    </span>
+    <div class="catalogue__info">
+      <img class="info__img" src="img/catalogue-aside.jpg" alt="Новые кресла">
+      <h2 class="info__title">
+        <b class="title__special">Оксфорд 1950</b>
+        Новая коллекция изысканных кресел
+      </h2>
+      <button class="info__btn">
+        В каталог
+        <svg class="btn__svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="10" stroke-width="2" />
+          <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <clippath>
+            <rect width="22" height="22" fill="white" />
+          </clippath>
+        </svg>
+      </button>
+    </div>
 
   </main>
 
