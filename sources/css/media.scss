@@ -491,6 +491,23 @@
       }
     }
   }
+
+  .cooperation {
+    margin-top: 18px;
+
+    &__for_providers {
+      grid-column: 1 / -1;
+    }
+
+    &__benefits {
+      grid-column: 1 / -1;
+    }
+
+    &__guarantees {
+      grid-column: 1 / -1;
+    }
+
+  }
 }
 
 @media (max-width: 720px) {
@@ -572,10 +589,6 @@
         row-gap: 24px;
         padding-right: 6px;
 
-        .footer__sublist {
-          gap: 8px;
-        }
-
         .list__item:nth-child(2n) {
           min-width: 134px;
         }
@@ -587,7 +600,7 @@
     }
 
     &__copyright {
-      margin-top: 8px;
+      margin-top: 4px;
     }
   }
 
@@ -1043,6 +1056,102 @@
             margin-bottom: 10px;
           }
         }
+      }
+    }
+  }
+
+  .cooperation {
+    margin-top: 21px;
+    gap: 31px;
+
+    &__root {
+      display: none;
+    }
+
+    &__title {
+      grid-row: 1;
+    }
+
+    &__for_providers {
+      grid-row: 2;
+
+      .providers__title {
+        font-size: 16px;
+      }
+
+      .providers__descr {
+        font-size: 14px;
+      }
+    }
+
+    &__services {
+      grid-row: 3;
+
+      .services__title {
+        font-size: 16px;
+      }
+
+      .services__list {
+        .list__item {
+          .item__descr {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &__benefits {
+      grid-row: 4;
+
+      .benefits__title {
+        font-size: 14px;
+      }
+
+      .benefits__list {
+        gap: 11px;
+
+        .list__item {
+          .item__title {
+            font-size: 16px;
+          }
+          
+          .item__descr {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &__guarantees {
+      grid-row: 5;
+
+      .guarantees__title {
+        font-size: 16px;
+        margin-bottom: 9px;
+      }
+
+      .guarantees__list {
+        gap: 12px;
+
+        .list__item {
+            font-size: 14px;
+            line-height: 177%;
+        }
+      }
+    }
+
+    &__note {
+      grid-row: 6;
+      grid-column: 1 / span 5;
+      gap: 16px;
+
+      .note__img {
+        max-width: 36px;
+        max-height: 54px;
+      }
+
+      .note__descr {
+        font-size: 16px;
       }
     }
   }

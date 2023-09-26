@@ -348,6 +348,18 @@
   .product_card__related .related__list .item__img {
     margin-bottom: 17px;
   }
+  .cooperation {
+    margin-top: 18px;
+  }
+  .cooperation__for_providers {
+    grid-column: 1/-1;
+  }
+  .cooperation__benefits {
+    grid-column: 1/-1;
+  }
+  .cooperation__guarantees {
+    grid-column: 1/-1;
+  }
 }
 @media (max-width: 720px) {
   .dark_bg {
@@ -415,9 +427,6 @@
     row-gap: 24px;
     padding-right: 6px;
   }
-  .footer__navigation .footer__list .footer__sublist {
-    gap: 8px;
-  }
   .footer__navigation .footer__list .list__item:nth-child(2n) {
     min-width: 134px;
   }
@@ -425,7 +434,7 @@
     min-width: 127px;
   }
   .footer__copyright {
-    margin-top: 8px;
+    margin-top: 4px;
   }
   .main_page .hero {
     margin-top: 21px;
@@ -764,6 +773,75 @@
   }
   .product_card__related .related__list .list__item:nth-child(2) .item__img {
     margin-bottom: 10px;
+  }
+  .cooperation {
+    margin-top: 21px;
+    gap: 31px;
+  }
+  .cooperation__root {
+    display: none;
+  }
+  .cooperation__title {
+    grid-row: 1;
+  }
+  .cooperation__for_providers {
+    grid-row: 2;
+  }
+  .cooperation__for_providers .providers__title {
+    font-size: 16px;
+  }
+  .cooperation__for_providers .providers__descr {
+    font-size: 14px;
+  }
+  .cooperation__services {
+    grid-row: 3;
+  }
+  .cooperation__services .services__title {
+    font-size: 16px;
+  }
+  .cooperation__services .services__list .list__item .item__descr {
+    font-size: 14px;
+  }
+  .cooperation__benefits {
+    grid-row: 4;
+  }
+  .cooperation__benefits .benefits__title {
+    font-size: 14px;
+  }
+  .cooperation__benefits .benefits__list {
+    gap: 11px;
+  }
+  .cooperation__benefits .benefits__list .list__item .item__title {
+    font-size: 16px;
+  }
+  .cooperation__benefits .benefits__list .list__item .item__descr {
+    font-size: 14px;
+  }
+  .cooperation__guarantees {
+    grid-row: 5;
+  }
+  .cooperation__guarantees .guarantees__title {
+    font-size: 16px;
+    margin-bottom: 9px;
+  }
+  .cooperation__guarantees .guarantees__list {
+    gap: 12px;
+  }
+  .cooperation__guarantees .guarantees__list .list__item {
+    font-size: 14px;
+    line-height: 177%;
+  }
+  .cooperation__note {
+    grid-row: 6;
+    grid-column: 1/span 5;
+    gap: 16px;
+  }
+  .cooperation__note .note__img {
+    max-width: 36px;
+    max-height: 54px;
+  }
+  .cooperation__note .note__descr {
+    font-size: 16px;
   }
 }
 @media (max-width: 440px) {
