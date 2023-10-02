@@ -15,7 +15,7 @@
 
   <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
 
-  <title>Каталог</title>
+  <title>Сотрудничество</title>
 </head>
 
 <body>
@@ -127,313 +127,98 @@
     </div>
   </header>
 
-  <main class="catalogue">
-    <p class="catalogue__root">
-      <a href="#" class="root__link">Главная</a> / <a href="#" class="root__link">Каталог</a> / <a href="#"
-        class="root__link">Диваны</a> / <a href="#" class="root__link">Прямые диваны</a>
+  <main class="cooperation">
+    <p class="cooperation__root">
+      <a href="#" class="root__link">Главная</a> / <a href="#" class="root__link">Сотрудничество</a>
     </p>
-    <div class="catalogue__filters">
-      <h2 class="filters__title"> Фильтровать по:</h2>
-      <form class="filters__form_color" action="https://jsonplaceholder.typicode.com/posts" method="post">
-        <h3 class="form__title">
-          Цвет
-        </h3>
-        <label class="form__input">
-          <input class="input__checkbox" type="checkbox" name="color" value="Коричневый">
-          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="20.2703" height="20" />
-            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
-            <rect class="Box" width="20.2703" height="20" rx="2" />
-            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
-          </svg>
-          <span class="input__text">Коричневый</span>
-        </label> <br>
-        <label class="form__input">
-          <input class="input__checkbox" type="checkbox" name="color" value="Черный">
-          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="20.2703" height="20" />
-            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
-            <rect class="Box" width="20.2703" height="20" rx="2" />
-            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
-          </svg>
-          <span class="input__text">Чёрный</span>
-        </label> <br>
-        <label class="form__input">
-          <input class="input__checkbox" type="checkbox" name="color" value="Синий">
-          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="20.2703" height="20" />
-            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
-            <rect class="Box" width="20.2703" height="20" rx="2" />
-            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
-          </svg>
-          <span class="input__text">Синий</span>
-        </label> <br>
-        <label class="form__input">
-          <input class="input__checkbox" type="checkbox" name="color" value="Белый">
-          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="20.2703" height="20" />
-            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
-            <rect class="Box" width="20.2703" height="20" rx="2" />
-            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
-          </svg>
-          <span class="input__text">Белый</span>
-        </label>
-      </form>
-      <form class="filters__form_category" action="https://jsonplaceholder.typicode.com/posts" method="post">
-        <h3 class="form__title"> Категория </h3>
-        <label class="form__input">
-          <input class="input__checkbox" type="checkbox" name="category" value="Диваны">
-          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="20.2703" height="20" />
-            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
-            <rect class="Box" width="20.2703" height="20" rx="2" />
-            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
-          </svg>
-          <span class="input__text">Диваны</span>
-        </label> <br>
-        <label class="form__input">
-          <input class="input__checkbox" type="checkbox" name="category" value="Кресла">
-          <svg class="checkbox__custom" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="20.2703" height="20" />
-            <rect class="Frame" x="0.5" y="0.5" width="19" height="19" rx="2"/>
-            <rect class="Box" width="20.2703" height="20" rx="2" />
-            <path class="Path" d="M3.91973 9.8L8.356866 14.23716L16.31406 5.299896" stroke-width="2.8"/>
-          </svg>
-          <span class="input__text">Кресла</span>
-        </label>
-      </form>
-      <form class="filters__form_price" action="https://jsonplaceholder.typicode.com/posts" method="post">
-        <h3 class="form__title">Цена</h3>
-        <label class="form__input">
-          <span class="input__text">от</span>
-          <input class="input__field" type="number" name="price" id="price__min">
-        </label>
-        <label class="form__input">
-          <span class="input__text">до</span>
-          <input class="input__field" type="number" name="price" id="price__max">
-        </label>
-      </form>
+    <h1 class="cooperation__title">Сотрудничество</h1>
+    <div class="cooperation__for_providers">
+      <h2 class="providers__title">Поставщикам</h2>
+      <p class="providers__descr">При планировании обстановки торгового помещения важно обустроить его с комфортом для
+        покупателей: грамотно зонировать, обеспечить эффективную демонстрацию и хранение товаров в зале. Если вам
+        необходимо комплексное оснащение, организация зоны отдыха или отдельные предметы меблировки для поддержания
+        эффективной торговой деятельности, мы поможем выбрать продукцию с учетом нагрузки от поступающего трафика.</p>
     </div>
-    <h2 class="catalogue__title">
-      Каталог
-    </h2>
-    <ul class="catalogue__list" aria-live="polite">
-      <li class="list__item">
-        <div class="item__rate">
-          <svg class="rate__svg">
-            <use xlink:href="img/sprite.svg#svg--star"></use>
+    <div class="cooperation__services">
+      <h2 class="services__title">Что вы получаете?</h2>
+      <ul class="services__list">
+        <li class="list__item">
+          <svg class="item__svg">
+            <use xlink:href="img/sprite.svg#svg--network"></use>
           </svg>
-          <p class="rate__num">5.0</p>
-        </div>
-        <picture class="item__img">
-          <source srcset="img/hr-1-1920.png" type="image/png" media="(min-width:441px)">
-          <source srcset="img/hr-1-320.png" type="image/png" media="(min-width:0px)">
-          <img src="img/hr-1-1920.png" alt="Фото товара">
-        </picture>
-        <h3 class="item__title">
-          Диван кожаный <br> “R-94”
-        </h3>
-        <p class="item__price">
-          94 990 руб
-        </p>
-        <button class="item__btn">
-          Купить
-        </button>
-      </li>
-      <li class="list__item">
-        <div class="item__rate">
-          <svg class="rate__svg">
-            <use xlink:href="img/sprite.svg#svg--star"></use>
+          <p class="item__descr">
+            Мы ценим идеи и вдохновение и предлагаем сотрудничество талантливым дизайнерам и архитекторам. Выпускаемая
+            нами продукция гармонично дополнит любой современный проект.
+          </p>
+        </li>
+        <li class="list__item">
+          <svg class="item__svg" >
+            <use xlink:href="img/sprite.svg#svg--briefcase"></use>
           </svg>
-          <p class="rate__num">4.9</p>
-        </div>
-        <picture class="item__img">
-          <source srcset="img/hr-2-1920.png" type="image/png" media="(min-width:441px)">
-          <source srcset="img/hr-2-320.png" type="image/png" media="(min-width:0px)">
-          <img src="img/hr-2-1920.png" alt="Фото товара">
-        </picture>
-        <h3 class="item__title">
-          Диван апартековый <br> “T-75”
-        </h3>
-        <p class="item__price">
-          69 990 руб
-        </p>
-        <button class="item__btn">
-          Купить
-        </button>
-      </li>
-      <li class="list__item">
-        <div class="item__rate">
-          <svg class="rate__svg">
-            <use xlink:href="img/sprite.svg#svg--star"></use>
+          <p class="item__descr">
+            Комплексное решение для красивого и функционального обустройства любых пространств.
+          </p>
+        </li>
+        <li class="list__item">
+          <svg class="item__svg">
+            <use xlink:href="img/sprite.svg#svg--git-pull-request"></use>
           </svg>
-          <p class="rate__num">4.8</p>
-        </div>
-        <picture class="item__img">
-          <source srcset="img/hr-3-1920.png" type="image/png" media="(min-width:441px)">
-          <source srcset="img/hr-3-320.png" type="image/png" media="(min-width:0px)">
-          <img src="img/hr-3-1920.png" alt="Фото товара">
-        </picture>
-        <h3 class="item__title">
-          Диван тканевый <br> “D-31”
-        </h3>
-        <p class="item__price">
-          28 490 руб
-        </p>
-        <button class="item__btn">
-          Купить
-        </button>
-      </li>
-      <li class="list__item">
-        <div class="item__rate">
-          <svg class="rate__svg">
-            <use xlink:href="img/sprite.svg#svg--star"></use>
-          </svg>
-          <p class="rate__num">5.0</p>
-        </div>
-        <picture class="item__img">
-          <source srcset="img/hr-4-1920.png" type="image/png" media="(min-width:441px)">
-          <source srcset="img/hr-4-320.png" type="image/png" media="(min-width:0px)">
-          <img src="img/hr-4-1920.png" alt="Фото товара">
-        </picture>
-        <h3 class="item__title">
-          Диван велюровый <br> “Y-68”
-        </h3>
-        <p class="item__price">
-          22 990 руб
-        </p>
-        <button class="item__btn">
-          Купить
-        </button>
-      </li>
-      <li class="list__item">
-        <div class="item__rate">
-          <svg class="rate__svg">
-            <use xlink:href="img/sprite.svg#svg--star"></use>
-          </svg>
-          <p class="rate__num">4.8</p>
-        </div>
-        <picture class="item__img">
-          <source srcset="img/hr-5-1920.png" type="image/png" media="(min-width:441px)">
-          <source srcset="img/hr-5-320.png" type="image/png" media="(min-width:0px)">
-          <img src="img/hr-5-1920.png" alt="Фото товара">
-        </picture>
-        <h3 class="item__title">
-          Диван из шинила <br> “W-95”
-        </h3>
-        <p class="item__price">
-          22 990 руб
-        </p>
-        <button class="item__btn">
-          Купить
-        </button>
-      </li>
-      <li class="list__item">
-        <div class="item__rate">
-          <svg class="rate__svg">
-            <use xlink:href="img/sprite.svg#svg--star"></use>
-          </svg>
-          <p class="rate__num">4.8</p>
-        </div>
-        <picture class="item__img">
-          <source srcset="img/hr-6-1920.png" type="image/png" media="(min-width:441px)">
-          <source srcset="img/hr-6-320.png" type="image/png" media="(min-width:0px)">
-          <img src="img/hr-6-1920.png" alt="Фото товара">
-        </picture>
-        <h3 class="item__title">
-          Диван флоковый <br> “G-41”
-        </h3>
-        <p class="item__price">
-          17 990 руб
-        </p>
-        <button class="item__btn">
-          Купить
-        </button>
-      </li>
-      <li class="list__item">
-        <div class="item__rate">
-          <svg class="rate__svg">
-            <use xlink:href="img/sprite.svg#svg--star"></use>
-          </svg>
-          <p class="rate__num">4.8</p>
-        </div>
-        <picture class="item__img">
-          <source srcset="img/hr-7-1920.png" type="image/png" media="(min-width:0px)">
-          <img src="img/hr-7-1920.png" alt="Фото товара">
-        </picture>
-        <h3 class="item__title">
-          Диван шиниловый <br> “V-43”
-        </h3>
-        <p class="item__price">
-          19 990 руб
-        </p>
-        <button class="item__btn">
-          Купить
-        </button>
-      </li>
-      <li class="list__item">
-        <div class="item__rate">
-          <svg class="rate__svg">
-            <use xlink:href="img/sprite.svg#svg--star"></use>
-          </svg>
-          <p class="rate__num">4.7</p>
-        </div>
-        <picture class="item__img">
-          <source srcset="img/hr-8-1920.png" type="image/png" media="(min-width:0px)">
-          <img src="img/hr-8-1920.png" alt="Фото товара">
-        </picture>
-        <h3 class="item__title">
-          Диван велюровый <br> “S-99”
-        </h3>
-        <p class="item__price">
-          19 990 руб
-        </p>
-        <button class="item__btn">
-          Купить
-        </button>
-      </li>
-      <li class="list__item">
-        <div class="item__rate">
-          <svg class="rate__svg">
-            <use xlink:href="img/sprite.svg#svg--star"></use>
-          </svg>
-          <p class="rate__num">4.7</p>
-        </div>
-        <picture class="item__img">
-          <source srcset="img/hr-9-1920.png" type="image/png" media="(min-width:0px)">
-          <img src="img/hr-9-1920.png" alt="Фото товара">
-        </picture>
-        <h3 class="item__title">
-          Диван из кожзама <br> “F-85”
-        </h3>
-        <p class="item__price">
-          26 990 руб
-        </p>
-        <button class="item__btn">
-          Купить
-        </button>
-      </li>
-    </ul>
-    <nav class="catalogue__pagination">
-    </nav>
-    <div class="catalogue__info">
-      <img class="info__img" src="img/catalogue-aside.jpg" alt="Новые кресла">
-      <h2 class="info__title">
-        <b class="title__special">Оксфорд 1950</b>
-        Новая коллекция изысканных кресел
+          <p class="item__descr">
+            В ассортименте представлены все товарные группы для того, чтобы воссоздать обстановку в помещениях разных
+            типов: кабинетах, смешанных пространствах, Open Space, гостевых и переговорных комнатах.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="cooperation__benefits">
+      <h2 class="benefits__title">
+        Ваши преимущества от сотрудничества
       </h2>
-      <button class="info__btn">
-        В каталог
-        <svg class="btn__svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <circle cx="11" cy="11" r="10" stroke-width="2" />
-          <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" />
-          <clippath>
-            <rect width="22" height="22" fill="white" />
-          </clippath>
-        </svg>
-      </button>
+      <ul class="benefits__list">
+        <li class="list__item">
+          <h3 class="item__title">Возможность 1:</h3>
+          <p class="item__descr">
+            Создавайте незабываемые впечатления. Красиво меблированная фотостудия не оставит клиентов равнодушными, а
+            созданная интерьером атмосфера будет надолго запечатлена на их снимках. Стильная и разноплановая обстановка
+            творческого пространства – ключевая составляющая его успешной деятельности. Позаботьтесь о людях в кадре, а
+            мы поможем правильно выбрать мебель.
+          </p>
+        </li>
+        <li class="list__item">
+          <h3 class="item__title">Возможность 2:</h3>
+          <p class="item__descr">
+            Мы предлагаем застройщикам, работающим на территории РФ, участие наших специалистов от этапа проектирования
+            обстановки квартир и подбора комплексных интерьерных решений до оптовых поставок мебели. Поможем
+            организовать демонстрационный зал с образцами изделий и материалов на площади нового здания, чтобы
+            покупатель заблаговременно подобрал тот вариант меблировки, который удовлетворит даже самые взыскательные
+            ожидания.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="cooperation__guarantees">
+      <h2 class="guarantees__title">Гарантии</h2>
+      <ol class="guarantees__list">
+        <li class="list__item">
+          При приемке товара Покупатель должен внимательно проверить его количество, качество и ассортимент на
+          соответствие сопроводительным документам и заказу. После подписания товарного чека Покупатель утрачивает право
+          предъявления претензий, которые можно выявить при приемке товара.
+        </li>
+        <li class="list__item">На товары, сборка которых производилась покупателем самостоятельно (не специалистами
+          Продавца), гарантийные обязательства Продавца не распространяются. Также гарантия не распространяется на
+          повреждения товара, полученные в ходе самостоятельной доставки и подъема товара. Покупатель не вправе
+          отказаться
+          от товара надлежащего качества, имеющего индивидуально-определенные свойства, т.е. если товар может быть
+          использован исключительно приобретающим его потребителем.</li>
+        <li class="list__item">Возврат или обмен товара возможен при условии, что сохранена упаковка, товарный вид и
+          потребительские свойства товара, а также товарный и кассовый чеки. В этом случае мы гарантируем вам возврат
+          полной стоимости товара (за вычетом стоимости доставки). В случае отказа от товара при доставке, клиент
+          оплачивает услуги доставки.</li>
+      </ol>
+    </div>
+    <div class="cooperation__note">
+      <img class="note__img" src="img/pencil.png" alt="Карандаш">
+      <p class="note__descr">Срок гарантии на нашу мебель составляет от 18 до 60 месяцев</p>
     </div>
 
   </main>

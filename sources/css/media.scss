@@ -421,11 +421,11 @@
     &__list {
       grid-template-columns: repeat(2, 1fr);
 
-      .list__item:nth-child(7),
-      .list__item:nth-child(8),
-      .list__item:nth-child(9) {
-        display: none;
-      }
+      // .list__item:nth-child(7),
+      // .list__item:nth-child(8),
+      // .list__item:nth-child(9) {
+      //   display: none;
+      // }
     }
   }
 
@@ -897,6 +897,7 @@
 
       .item__title {
         padding-left: 16px;
+        padding-right: 16px;
         margin-bottom: 0;
         font-size: 16px;
       }
@@ -924,6 +925,10 @@
       .item__price {
         padding-left: 16px;
         margin-bottom: 18px;
+      }
+
+      .item__img {
+        padding: 0 15px;
       }
     }
 
@@ -1184,6 +1189,10 @@
       .list__item {
         min-height: 278px;
         padding-bottom: 16px;
+      }
+
+      .item__img {
+        max-width: 138px;
       }
     }
   }

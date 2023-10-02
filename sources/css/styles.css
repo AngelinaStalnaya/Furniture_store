@@ -2155,23 +2155,31 @@ body {
   align-self: center;
 }
 .catalogue__filters .filters__form_price .form__input .input__field {
-  margin: 0;
-  padding: 0;
-  color: #333333;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 130%;
-  font-size: 16px;
-  color: #666666;
   max-width: 86px;
   min-height: 30px;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   padding-left: 13px;
   border-radius: 2px;
   border: 1px solid #999999;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
   margin: 0 7px;
+}
+.catalogue__filters .filters__form_price .form__input .input__field:focus, .catalogue__filters .filters__form_price .form__input .input__field:focus-visible {
+  border: 1px solid #a65cf0;
+  background-color: #ebd1ff;
+  outline: none;
+}
+.catalogue__filters .filters__form_price .form__input .input__field:hover {
+  border: 1px solid #a65cf0;
+}
+.catalogue__filters .filters__form_price .form__input .input__field:active {
+  border: 1px solid #7033ac;
 }
 .catalogue__filters .filters__form_price .form__input .input__text:first-of-type {
   margin-right: 2px;
@@ -2314,7 +2322,7 @@ body {
   background-color: #a65cf0;
   color: #ffffff;
 }
-.catalogue__pagination .pagination__btn:active {
+.catalogue__pagination .pagination__btn:active, .catalogue__pagination .pagination__btn-active {
   background-color: #7033ac;
   color: #ffffff;
   border: 2px solid #7033ac;
@@ -3414,11 +3422,6 @@ body {
   .catalogue__list {
     grid-template-columns: repeat(2, 1fr);
   }
-  .catalogue__list .list__item:nth-child(7),
-  .catalogue__list .list__item:nth-child(8),
-  .catalogue__list .list__item:nth-child(9) {
-    display: none;
-  }
   .product_card {
     margin-top: 18px;
   }
@@ -3771,6 +3774,7 @@ body {
   }
   .catalogue__list .item__title {
     padding-left: 16px;
+    padding-right: 16px;
     margin-bottom: 0;
     font-size: 16px;
   }
@@ -3793,6 +3797,9 @@ body {
   .catalogue__list .item__price {
     padding-left: 16px;
     margin-bottom: 18px;
+  }
+  .catalogue__list .item__img {
+    padding: 0 15px;
   }
   .catalogue__pagination {
     grid-row: 8;
@@ -3976,6 +3983,9 @@ body {
   .catalogue__list .list__item {
     min-height: 278px;
     padding-bottom: 16px;
+  }
+  .catalogue__list .item__img {
+    max-width: 138px;
   }
   .product_card__related .related__list .list__item {
     min-height: 278px;

@@ -33,8 +33,6 @@ const styles = () => {
   .pipe(browserSync.stream())
 };
 
-// !! add separated styles for every html page
-
 const htmlMinify = () => {
   return src('sources/**/*.html')
   .pipe((mode.production(htmlMin({
@@ -43,7 +41,6 @@ const htmlMinify = () => {
   .pipe(dest('dist'))
   .pipe(browserSync.stream())
 };
-
 
 const svgSprites = () => {
   return src('sources/img/**/*.svg')
