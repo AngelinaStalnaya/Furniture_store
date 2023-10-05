@@ -1,4 +1,4 @@
-// *** catalogue list fill in logics***
+// *** catalogue list fill in logic***
 
 
 const catalogueList = document.querySelector('.catalogue__list');

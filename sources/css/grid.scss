@@ -63,6 +63,9 @@ body {
   &__logo {
     grid-column: 1/ span 2;
     grid-row: 2;
+    border: none;
+    background-color: transparent;
+    width: fit-content;
 
     .logo__svg {
       width: 187px;
@@ -82,6 +85,13 @@ body {
     }
 
     .item__link {
+      @include txt_link;
+    }
+
+    #load_catalogue {
+      border: none;
+      background: transparent;
+      padding: 0;
       @include txt_link;
     }
   }
@@ -151,6 +161,9 @@ body {
     .footer__logo {
       grid-column: 1/ span 2;
       grid-row: 1;
+      border: none;
+      background-color: transparent;
+      width: fit-content;
 
       .logo__svg {
         width: 187px;
@@ -187,6 +200,14 @@ body {
         @include list_reset;
 
         .item__link_title {
+          @include txt_link;
+          margin-top: 3px;
+        }
+
+        #load_cooperation {
+          border: none;
+          background-color: transparent;
+          padding: 0;
           @include txt_link;
           margin-top: 3px;
         }
@@ -313,12 +334,6 @@ body {
 
       .list__item:nth-child(3) {
         grid-column: 4;
-      }
-
-      .list__item:nth-child(4),
-      .list__item:nth-child(5),
-      .list__item:nth-child(6) {
-        display: none;
       }
 
       .item__tag {
@@ -650,13 +665,7 @@ body {
           margin-bottom: 30px;
         }
       }
-
-      .list__item:nth-child(3),
-      .list__item:nth-child(4),
-      .list__item:nth-child(5) {
-        display: none;
       }
-    }
   }
 
   .contact {

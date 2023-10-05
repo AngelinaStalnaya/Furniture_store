@@ -20,91 +20,92 @@ const clean = () => {
 
 const styles = () => {
   return src('sources/css/**/*.css')
-  .pipe((mode.development(sourcemaps.init())))
-  .pipe(concat('main.css'))
-  .pipe(autoprefixer({
+    .pipe((mode.development(sourcemaps.init())))
+    .pipe(concat('main.css'))
+    .pipe(autoprefixer({
       cascade: false,
-  }))
-  .pipe((mode.production(cleanCss({
+    }))
+    .pipe((mode.production(cleanCss({
       level: 2,
-  }))))
-  .pipe((mode.development(sourcemaps.write())))
-  .pipe(dest('dist'))
-  .pipe(browserSync.stream())
+    }))))
+    .pipe((mode.development(sourcemaps.write())))
+    .pipe(dest('dist'))
+    .pipe(browserSync.stream())
 };
 
 const htmlMinify = () => {
   return src('sources/**/*.html')
-  .pipe((mode.production(htmlMin({
+    .pipe((mode.production(htmlMin({
       collapseWhitespace: true,
-  }))))
-  .pipe(dest('dist'))
-  .pipe(browserSync.stream())
+    }))))
+    .pipe(dest('dist'))
+    .pipe(browserSync.stream())
 };
 
 const svgSprites = () => {
   return src('sources/img/**/*.svg')
-  .pipe(svgSprite({
+    .pipe(svgSprite({
       mode: {
-          stack: {
-              sprite: '../sprite.svg',
-      },
-  }}))
-  .pipe(dest('dist/img'))
+        stack: {
+          sprite: '../sprite.svg',
+        },
+      }
+    }))
+    .pipe(dest('dist/img'))
 };
 
 const scripts = () => {
   return src([
-      'sources/js/components/**/*.js',
-      'sources/js/main.js'
+    'sources/js/main.js',
+    'sources/js/components/**/*.js'
   ])
-  .pipe((mode.development(sourcemaps.init())))
-  .pipe(babel({
+    .pipe((mode.development(sourcemaps.init())))
+    .pipe(babel({
       presets: ['@babel/env']
-  }))
-  .pipe(concat('app.js'))
-  .pipe(mode.production(uglify({
+    }))
+    .pipe(concat('app.js'))
+    .pipe(mode.production(uglify({
       toplevel: true,
-  })).on('error', notify.onError()))
-  .pipe((mode.development(sourcemaps.write())))
-  .pipe(dest('dist'))
-  .pipe(browserSync.stream())
+    })).on('error', notify.onError()))
+    .pipe((mode.development(sourcemaps.write())))
+    .pipe(dest('dist'))
+    .pipe(browserSync.stream())
 };
 
 // !! add separated scipt files while necessary
 
 const images = () => {
   return src([
-      'sources/img/**/*.png',
-      'sources/img/**/*.jpg',
-      'sources/img/**/*.jpeg'
+    'sources/img/**/*.png',
+    'sources/img/**/*.jpg',
+    'sources/img/**/*.jpeg'
   ])
-  .pipe(image())
-  .pipe(dest('dist/img'))
+    .pipe(image())
+    .pipe(dest('dist/img'))
 }
 
 const svgmin = () => {
   return src('sources/img/*.svg')
-  .pipe(svgMin())
-  .pipe(dest('dist/img'))
+    .pipe(svgMin())
+    .pipe(dest('dist/img'))
 }
 
 const fonts = () => {
   return src([
     'sources/fonts/**/*.woff2',
     'sources/fonts/**/*.woff'
-])
-  .pipe((mode.development(sourcemaps.init())))
-  .pipe((mode.development(sourcemaps.write())))
-  .pipe(dest('dist/fonts'))
-  .pipe(browserSync.stream())
+  ])
+    .pipe((mode.development(sourcemaps.init())))
+    .pipe((mode.development(sourcemaps.write())))
+    .pipe(dest('dist/fonts'))
+    .pipe(browserSync.stream())
 };
 
 const watchFiles = () => {
   browserSync.init({
-      server: {
-          baseDir: 'dist',
-      }
+    server: {
+      baseDir: 'dist',
+    }
   })
 };
 

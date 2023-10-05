@@ -35,8 +35,6 @@ const clearPageNumbers = () => {
 const getPaginationNumbers = () => {
   var pageCount = getPageCount();
 
-  var paginationLimit = getItemLimit();
-
   for (let i = 1; i <= pageCount; i++) {
     addPageNumber(i);
   }
@@ -56,7 +54,6 @@ const markActivePage = () => {
 
 // function for filling currentPage by content:
 const setCurrentPage = (pageNumber) => {
-  console.log(currentPage)
   currentPage = pageNumber;
 
   markActivePage();

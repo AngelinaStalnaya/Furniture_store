@@ -20,9 +20,8 @@
   border: 1px solid transparent;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
 
-
   &:focus {
-    background-color: $pink_light;
+    background-color: $primary_light;
     border: 2px solid $primary_shade;
   }
 
@@ -38,8 +37,6 @@
     background-color: $md_grey;
     color: $grey;
   }
-
-
 }
 
 @mixin secondary_btn {
@@ -57,7 +54,6 @@
   font-weight: 600;
   line-height: 100%;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
-
 
   &:focus {
     background-color: $primary_light;
