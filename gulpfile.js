@@ -56,8 +56,8 @@ const svgSprites = () => {
 
 const scripts = () => {
   return src([
-    'sources/js/main.js',
-    'sources/js/components/**/*.js'
+    'sources/js/components/**/*.js',
+    'sources/js/main.js'
   ])
     .pipe((mode.development(sourcemaps.init())))
     .pipe(babel({

@@ -53,3 +53,8 @@ categoryBtns.forEach(categoryBtn => categoryBtn.addEventListener('click', () => 
 const usefulList = document.querySelector('.useful__list');
 const usefulBtns = usefulList.querySelectorAll('.item__btn');
 usefulBtns.forEach(usefulBtn => usefulBtn.addEventListener('click', () => {loadPage('.main_page')}));
+
+
+window.addEventListener('load', () => {
+  loadPage('.main_page');
+});
