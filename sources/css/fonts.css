@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Regular"), local("OpenSansRegular"), local("OpenSans Regular"), url(fonts/OpenSansRegular.woff2) format("woff2"), url(fonts/OpenSansRegular.woff) format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold"), local("OpenSansBold"), local("OpenSans Bold"), url(fonts/OpenSansBold.woff2) format("woff2"), url(fonts/OpenSansBold.woff) format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display Black"), local("PlayfairDisplayBlack"), local("PlayfairDisplay Black"), url(fonts/PlayfairDisplayBlack.woff2) format("woff2"), url(fonts/PlayfairDisplayBlack.woff) format("woff");
+  font-weight: 900;
+  font-display: swap;
+}/*# sourceMappingURL=fonts.css.map */
