@@ -5,15 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preload" href="fonts/OpenSansBold.woff2" as="font">
-  <link rel="preload" href="fonts/OpenSansRegular.woff2" as="font">
-  <link rel="preload" href="fonts/PlayfairDisplayBlack.woff2" as="font">
+  <link rel="import" href="../img/sprite.svg">
 
-  <link rel="import" href="img/sprite.svg">
+  <link rel="stylesheet" href="../main.css">
 
-  <link rel="stylesheet" href="main.css">
-
-  <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
+  <link rel="shortcut icon" href="../img/favicon.svg" type="image/svg">
 
   <title>Сотрудничество</title>
 </head>
@@ -55,13 +51,13 @@
     </nav>
     <a href="#" class="header__logo">
       <svg class="header__logo__svg">
-        <use xlink:href="img/sprite.svg#svg--logo"></use>
+        <use xlink:href="../img/sprite.svg#svg--logo"></use>
       </svg>
     </a>
     <nav class="header__menu">
       <ul class="header__menu__list">
         <li class="header__list__item">
-          <a href="#" class="header__item__link">
+          <a href="html/catalogue.html" class="header__item__link">
             Каталог
           </a>
         </li>
@@ -131,7 +127,7 @@
 
   <main class="main cooperation">
     <p class="cooperation__root">
-      <a href="#" class="cooperation__root__link">Главная</a> / <a href="#" class="cooperation__root__link">Сотрудничество</a>
+      <a href="../index.html" class="cooperation__root__link">Главная</a> / <a href="#" class="cooperation__root__link">Сотрудничество</a>
     </p>
     <h1 class="cooperation__title">Сотрудничество</h1>
     <div class="cooperation__providers">
@@ -146,7 +142,7 @@
       <ul class="cooperation__services__list">
         <li class="cooperation__services__item">
           <svg class="cooperation__services__svg">
-            <use xlink:href="img/sprite.svg#svg--network"></use>
+            <use xlink:href="../img/sprite.svg#svg--network"></use>
           </svg>
           <p class="cooperation__services__descr">
             Мы ценим идеи и вдохновение и предлагаем сотрудничество талантливым дизайнерам и архитекторам. Выпускаемая
@@ -155,7 +151,7 @@
         </li>
         <li class="cooperation__services__item">
           <svg class="cooperation__services__svg" >
-            <use xlink:href="img/sprite.svg#svg--briefcase"></use>
+            <use xlink:href="../img/sprite.svg#svg--briefcase"></use>
           </svg>
           <p class="cooperation__services__descr">
             Комплексное решение для красивого и функционального обустройства любых пространств.
@@ -163,7 +159,7 @@
         </li>
         <li class="cooperation__services__item">
           <svg class="cooperation__services__svg">
-            <use xlink:href="img/sprite.svg#svg--git-pull-request"></use>
+            <use xlink:href="../img/sprite.svg#svg--git-pull-request"></use>
           </svg>
           <p class="cooperation__services__descr">
             В ассортименте представлены все товарные группы для того, чтобы воссоздать обстановку в помещениях разных
@@ -222,7 +218,7 @@
       </ol>
     </div>
     <div class="cooperation__note">
-      <img class="cooperation__note__img" src="img/pencil.png" alt="Карандаш">
+      <img class="cooperation__note__img" src="../img/pencil.png" alt="Карандаш">
       <p class="cooperation__note__descr">Срок гарантии на нашу мебель составляет от 18 до 60 месяцев</p>
     </div>
 
@@ -232,7 +228,7 @@
     <div class="footer__navigation">
       <a href="#" class="footer__navigation__logo">
         <svg class="footer__logo__svg">
-          <use xlink:href="img/sprite.svg#svg--logo"></use>
+          <use xlink:href="../img/sprite.svg#svg--logo"></use>
         </svg>
       </a>
       <div class="footer__navigation__social">
@@ -289,7 +285,6 @@
     </p>
   </footer>
 
-  <script src="app.js"></script>
 </body>
 
 </html>

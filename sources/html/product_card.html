@@ -5,15 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preload" href="fonts/OpenSansBold.woff2" as="font">
-  <link rel="preload" href="fonts/OpenSansRegular.woff2" as="font">
-  <link rel="preload" href="fonts/PlayfairDisplayBlack.woff2" as="font">
+  <link rel="import" href="../img/sprite.svg">
 
-  <link rel="import" href="img/sprite.svg">
+  <link rel="stylesheet" href="../main.css">
 
-  <link rel="stylesheet" href="main.css">
-
-  <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
+  <link rel="shortcut icon" href="../img/favicon.svg" type="image/svg">
 
   <title>Карточка товара</title>
 </head>
@@ -55,13 +51,13 @@
     </nav>
     <a href="#" class="header__logo">
       <svg class="header__logo__svg">
-        <use xlink:href="img/sprite.svg#svg--logo"></use>
+        <use xlink:href="../img/sprite.svg#svg--logo"></use>
       </svg>
     </a>
     <nav class="header__menu">
       <ul class="header__menu__list">
         <li class="header__list__item">
-          <a href="#" class="header__item__link">
+          <a href="catalogue.html" class="header__item__link">
             Каталог
           </a>
         </li>
@@ -131,20 +127,20 @@
 
   <main class="main product-card">
     <p class="product-card__root">
-      <a href="#" class="product-card__root__link">Главная</a> / <a href="#" class="product-card__root__link">Каталог</a> / <a href="#"
+      <a href="../index.html" class="product-card__root__link">Главная</a> / <a href="catalogue.html" class="product-card__root__link">Каталог</a> / <a href="#"
         class="product-card__root__link">Диваны</a> / <a href="#" class="product-card__root__link">Прямые диваны</a> / <a href="#"
         class="product-card__root__link">D-31</a>
     </p>
     <section class="product-card__item">
       <picture class="product-card__img">
-        <source srcset="img/D-31-1920.png" type="image/png" media="(min-width:441px)">
-        <source srcset="img/D-31-320.png" type="image/png" media="(min-width:0px)">
-        <img src="img/D-31-1920.png" alt="Фото товара">
+        <source srcset="../img/D-31-1920.png" type="image/png" media="(min-width:441px)">
+        <source srcset="../img/D-31-320.png" type="image/png" media="(min-width:0px)">
+        <img src="../img/D-31-1920.png" alt="Фото товара">
       </picture>
       <div class="product-card__info-basic">
         <div class="product-card__info__rate">
           <svg class="product-card__rate__svg">
-            <use xlink:href="img/sprite.svg#svg--star"></use>
+            <use xlink:href="../img/sprite.svg#svg--star"></use>
           </svg>
           <p class="product-card__rate__num">4.8</p>
         </div>
@@ -176,14 +172,14 @@
         </p>
         <div class="product-card__descr__img">
           <picture class="product-card__img-addition">
-            <source srcset="img/mechanism-1-1920.png" type="image/png" media="(min-width:441px)">
-            <source srcset="img/mechanism-1-320.png" type="image/png" media="(min-width:0px)">
-            <img src="img/mechanism-1-1920.png" alt="Механизм">
+            <source srcset="../img/mechanism-1-1920.png" type="image/png" media="(min-width:441px)">
+            <source srcset="../img/mechanism-1-320.png" type="image/png" media="(min-width:0px)">
+            <img src="../img/mechanism-1-1920.png" alt="Механизм">
           </picture>
           <picture class="product-card__img-addition">
-            <source srcset="img/mechanism-2-1920.png" type="image/png" media="(min-width:441px)">
-            <source srcset="img/mechanism-2-320.png" type="image/png" media="(min-width:0px)">
-            <img src="img/mechanism-2-1920.png" alt="Механизм">
+            <source srcset="../img/mechanism-2-1920.png" type="image/png" media="(min-width:441px)">
+            <source srcset="../img/mechanism-2-320.png" type="image/png" media="(min-width:0px)">
+            <img src="../img/mechanism-2-1920.png" alt="Механизм">
           </picture>
         </div>
       </div>
@@ -258,11 +254,14 @@
         <li class="product-card__list__item">
           <div class="product-card__item__rate">
             <svg class="product-card__rate__svg">
-              <use xlink:href="img/sprite.svg#svg--star"></use>
+              <use xlink:href="../img/sprite.svg#svg--star"></use>
             </svg>
             <p class="product-card__rate__num">4.5</p>
           </div>
-          <img class="product-card__item__img" src="img/product-1-1920.png" alt="Фото товара">
+          <picture class="product-card__item__img">
+            <source srcset="../img/product-1-1920.png" type="image/png" media="(min-width:0px)">
+            <img  src="../img/product-1-1920.png" alt="Фото товара">
+          </picture>
           <h3 class="product-card__item__title">
             Диван велюровый <br> “R-85”
           </h3>
@@ -276,11 +275,14 @@
         <li class="product-card__list__item">
           <div class="product-card__item__rate">
             <svg class="product-card__rate__svg">
-              <use xlink:href="img/sprite.svg#svg--star"></use>
+              <use xlink:href="../img/sprite.svg#svg--star"></use>
             </svg>
             <p class="product-card__rate__num">4.6</p>
           </div>
-          <img class="product-card__item__img" src="img/product-2-1920.png" alt="Фото товара">
+          <picture class="product-card__item__img">
+            <source srcset="../img/product-2-1920.png" type="image/png" media="(min-width:0px)">
+            <img  src="../img/product-2-1920.png" alt="Фото товара">
+          </picture>
           <h3 class="product-card__item__title">
             Диван флоковый <br> “H-58”
           </h3>
@@ -294,11 +296,14 @@
         <li class="product-card__list__item">
           <div class="product-card__item__rate">
             <svg class="product-card__rate__svg">
-              <use xlink:href="img/sprite.svg#svg--star"></use>
+              <use xlink:href="../img/sprite.svg#svg--star"></use>
             </svg>
             <p class="product-card__rate__num">4.6</p>
           </div>
-          <img class="product-card__item__img" src="img/product-3-1920.png" alt="Фото товара">
+          <picture class="product-card__item__img">
+            <source srcset="../img/product-3-1920.png" type="image/png" media="(min-width:0px)">
+            <img  src="../img/product-3-1920.png" alt="Фото товара">
+          </picture>
           <h3 class="product-card__item__title">
             Диван велюровый <br> “S-44”
           </h3>
@@ -312,11 +317,14 @@
         <li class="product-card__list__item">
           <div class="product-card__item__rate">
             <svg class="product-card__rate__svg">
-              <use xlink:href="img/sprite.svg#svg--star"></use>
+              <use xlink:href="../img/sprite.svg#svg--star"></use>
             </svg>
             <p class="product-card__rate__num">4.8</p>
           </div>
-          <img class="product-card__item__img" src="img/product-4-1920.png" alt="Фото товара">
+          <picture class="product-card__item__img">
+            <source srcset="../img/product-4-1920.png" type="image/png" media="(min-width:0px)">
+            <img  src="../img/product-4-1920.png" alt="Фото товара">
+          </picture>
           <h3 class="product-card__item__title">
             Диван шиниловый <br> “V-43”
           </h3>
@@ -335,7 +343,7 @@
     <div class="footer__navigation">
       <a href="#" class="footer__navigation__logo">
         <svg class="footer__logo__svg">
-          <use xlink:href="img/sprite.svg#svg--logo"></use>
+          <use xlink:href="../img/sprite.svg#svg--logo"></use>
         </svg>
       </a>
       <div class="footer__navigation__social">
@@ -379,7 +387,7 @@
         </li>
         <li class="footer__list__item">
           <ul class="footer__sublist">
-            <li class="footer__sublist__item"><a href="#" class="footer__item__link-title">Сотрудничество</a></li>
+            <li class="footer__sublist__item"><a href="cooperation.html" class="footer__item__link-title">Сотрудничество</a></li>
             <li class="footer__sublist__item"><a href="#" class="footer__item__link">Поставщикам</a></li>
             <li class="footer__sublist__item"><a href="#" class="footer__item__link">Оптовикам</a></li>
             <li class="footer__sublist__item"><a href="#" class="footer__item__link">Карьера</a></li>
@@ -392,8 +400,7 @@
     </p>
   </footer>
 
-
-  <script src="app.js"></script>
+  <script src="../js/product_card.js"></script>
 </body>
 
 </html>

@@ -725,10 +725,6 @@
 
 @mixin btn_reset {
   border: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
@@ -753,4 +749,15 @@
   @media (max-width: 992px) {
     grid-template-columns: repeat(6, 1fr);
   }
+}
+
+@mixin list_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  border-radius: 10px;
+  background-color: $grey_light;
+  padding: 0 30px 30px;
 }

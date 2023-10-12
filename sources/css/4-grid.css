@@ -254,10 +254,6 @@ body {
 }
 .header__form__btn {
   border: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
@@ -550,6 +546,7 @@ body {
   padding-left: 320px;
   padding-right: 320px;
   align-items: center;
+  margin-top: 30px;
 }
 @media (max-width: 1440px) {
   .hero {
@@ -696,8 +693,8 @@ body {
   position: relative;
   border-radius: 10px;
   background-color: #f6f6f6;
+  padding: 0 30px 30px;
   min-height: 511px;
-  padding: 30px;
 }
 .special-offers__list__item:nth-child(1) {
   grid-column: 1;
@@ -870,8 +867,8 @@ body {
   position: relative;
   border-radius: 10px;
   background-color: #f6f6f6;
+  padding: 0 30px 30px;
   min-height: 420px;
-  padding-bottom: 30px;
 }
 .high-rate__item__rate {
   position: absolute;
@@ -896,7 +893,7 @@ body {
 }
 .high-rate__item__img {
   align-self: center;
-  margin-bottom: 9px;
+  margin: 0 -15px 9px;
 }
 .high-rate__item__title {
   margin: 0;
@@ -906,11 +903,9 @@ body {
   font-weight: 400;
   line-height: 130%;
   margin-bottom: 11px;
-  padding-left: 30px;
   max-width: 266px;
 }
 .high-rate__item__price {
-  padding-left: 30px;
   margin-bottom: 23px;
 }
 .high-rate__item__btn {
@@ -928,7 +923,6 @@ body {
   font-weight: 600;
   line-height: 100%;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
-  margin-left: 30px;
 }
 .high-rate__item__btn:focus {
   background-color: #c998f8;
@@ -1009,10 +1003,6 @@ body {
 }
 .advertise__btn {
   border: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
@@ -1122,7 +1112,9 @@ body {
   position: relative;
   border-radius: 10px;
   background-color: #f6f6f6;
+  padding: 0 30px 30px;
   max-height: 405px;
+  padding: 30px;
 }
 .top-categories__list__item:nth-child(1) {
   min-height: 511px;
@@ -1152,8 +1144,6 @@ body {
   padding: 0;
   display: flex;
   gap: 30px;
-  padding-top: 30px;
-  padding-left: 30px;
   margin-bottom: 15px;
 }
 .top-categories__item__link {
@@ -1187,18 +1177,13 @@ body {
   font-weight: 400;
   line-height: 130%;
   margin-bottom: 30px;
-  padding-left: 30px;
 }
 .top-categories__item__img {
   align-self: flex-start;
-  margin-bottom: 30px;
+  margin: 0 -30px 27px;
 }
 .top-categories__item__btn {
   border: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
@@ -1212,8 +1197,6 @@ body {
   line-height: 120%;
   border-bottom: 2px solid transparent;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
-  margin-left: 30px;
-  margin-bottom: 27px;
 }
 .top-categories__item__btn svg path, .top-categories__item__btn svg circle {
   stroke: #a65cf0;
@@ -1339,10 +1322,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-end;
   position: relative;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
   background-color: #f6f6f6;
+  padding: 0 30px 30px;
   min-height: 676px;
 }
 .useful__item__descr {
@@ -1352,24 +1336,14 @@ body {
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 30px;
-  margin-left: 30px;
+  margin-bottom: 35px;
   min-height: 98px;
 }
 .useful__item__img {
-  justify-self: flex-start;
-  margin-bottom: 30px;
+  margin: 0 -30px 25px;
   border-radius: 10px 10px 0 0;
 }
 .useful__item__btn {
-  border: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1384,8 +1358,6 @@ body {
   font-weight: 600;
   line-height: 100%;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
-  margin-left: 30px;
-  margin-bottom: 30px;
 }
 .useful__item__btn:focus {
   background-color: #c998f8;
@@ -1819,8 +1791,8 @@ body {
   position: relative;
   border-radius: 10px;
   background-color: #f6f6f6;
+  padding: 0 30px 30px;
   min-height: 420px;
-  padding-bottom: 30px;
 }
 .catalogue__item__rate {
   position: absolute;
@@ -1845,7 +1817,7 @@ body {
 }
 .catalogue__item__img {
   align-self: center;
-  margin-bottom: 13px;
+  margin: 0 -30px 13px;
 }
 .catalogue__item__title {
   margin: 0;
@@ -1855,11 +1827,9 @@ body {
   font-weight: 400;
   line-height: 130%;
   margin-bottom: 6px;
-  padding-left: 30px;
   max-width: 266px;
 }
 .catalogue__item__price {
-  padding-left: 30px;
   margin-bottom: 23px;
 }
 .catalogue__item__btn {
@@ -1877,7 +1847,6 @@ body {
   font-weight: 600;
   line-height: 100%;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
-  margin-left: 30px;
 }
 .catalogue__item__btn:focus {
   background-color: #c998f8;
@@ -1964,10 +1933,6 @@ body {
 }
 .catalogue__info__btn {
   border: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
@@ -2172,10 +2137,6 @@ body {
 }
 .product-card__info__btn {
   border: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
@@ -2223,8 +2184,7 @@ body {
   gap: 10px;
   border-bottom: 2px solid transparent;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
-  max-width: 170px;
-  margin-left: 30px;
+  max-width: 230px;
 }
 .product-card__info__link:focus {
   color: #c998f8;
@@ -2385,8 +2345,8 @@ body {
   position: relative;
   border-radius: 10px;
   background-color: #f6f6f6;
+  padding: 0 30px 30px;
   min-height: 420px;
-  padding-bottom: 30px;
 }
 .product-card__item__rate {
   position: absolute;
@@ -2411,7 +2371,7 @@ body {
 }
 .product-card__item__img {
   align-self: center;
-  margin-bottom: 13px;
+  margin: 0 -30px 13px;
 }
 .product-card__item__title {
   margin: 0;
@@ -2421,11 +2381,9 @@ body {
   font-weight: 400;
   line-height: 130%;
   margin-bottom: 6px;
-  padding-left: 30px;
   max-width: 266px;
 }
 .product-card__item__price {
-  padding-left: 30px;
   margin-bottom: 23px;
 }
 .product-card__item__btn {
@@ -2443,7 +2401,6 @@ body {
   font-weight: 600;
   line-height: 100%;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
-  margin-left: 30px;
 }
 .product-card__item__btn:focus {
   background-color: #c998f8;

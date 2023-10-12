@@ -5,10 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preload" href="fonts/OpenSansBold.woff2" as="font">
-  <link rel="preload" href="fonts/OpenSansRegular.woff2" as="font">
-  <link rel="preload" href="fonts/PlayfairDisplayBlack.woff2" as="font">
-
   <link rel="import" href="img/sprite.svg">
 
   <link rel="stylesheet" href="main.css">
@@ -61,7 +57,7 @@
     <nav class="header__menu">
       <ul class="header__menu__list">
         <li class="header__list__item">
-          <a href="#" class="header__item__link">
+          <a href="html/catalogue.html" class="header__item__link">
             Каталог
           </a>
         </li>
@@ -671,7 +667,11 @@
         </li>
 
         <li class="useful__list__item">
-          <img class="useful__item__img" src="img/useful-3-320.jpg" alt="Интерьер">
+          <picture class="useful__item__img">
+            <source srcset="img/useful-3-1024.jpg" type="image/jpg" media="(min-width:993px)">
+            <source srcset="img/useful-3-320.jpg" type="image/jpg" media="(min-width:0px)">
+            <img src="img/useful-3-1024.jpg" alt="Интерьер">
+          </picture>
           <p class="useful__item__descr">
             Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?
           </p>
@@ -679,14 +679,20 @@
         </li>
 
         <li class="useful__list__item">
-          <img class="useful__item__img" src="img/useful-4-320.jpg" alt="Интерьер">
+          <picture class="useful__item__img">
+            <source srcset="img/useful-4-320.jpg" type="image/jpg" media="(min-width:0px)">
+            <img src="img/useful-4-320.jpg" alt="Интерьер">
+          </picture>
           <p class="useful__item__descr">
             Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?
           </p>
           <button class="useful__item__btn">Читать</button>
         </li>
         <li class="useful__list__item">
-          <img class="useful__item__img" src="img/useful-5-320.jpg" alt="Интерьер">
+          <picture class="useful__item__img">
+            <source srcset="img/useful-5-320.jpg" type="image/jpg" media="(min-width:0px)">
+            <img src="img/useful-5-320.jpg" alt="Интерьер">
+          </picture>
           <p class="useful__item__descr">
             Как принято считать, некоторые особенности приносят несомненную пользу обществу?
           </p>
@@ -786,7 +792,8 @@
         </li>
         <li class="footer__list__item">
           <ul class="footer__sublist">
-            <li class="footer__sublist__item"><a href="#" class="footer__item__link-title">Сотрудничество</a></li>
+            <li class="footer__sublist__item"><a href="html/cooperation.html"
+                class="footer__item__link-title">Сотрудничество</a></li>
             <li class="footer__sublist__item"><a href="#" class="footer__item__link">Поставщикам</a></li>
             <li class="footer__sublist__item"><a href="#" class="footer__item__link">Оптовикам</a></li>
             <li class="footer__sublist__item"><a href="#" class="footer__item__link">Карьера</a></li>
@@ -799,7 +806,7 @@
     </p>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
