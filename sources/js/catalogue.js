@@ -60,7 +60,10 @@ const buttonElement = () => {
 const addListItem = (index) => {
   const listItem = document.createElement('li');
   listItem.className = 'catalogue__list__item';
-  listItem.innerHTML = divElement(index) + pictureElement(index) + titleElement(index) + priceElement(index) + buttonElement();
+  const itemContent = document.createElement('article');
+  itemContent.classList = 'catalogue__item__content';
+  itemContent.innerHTML = divElement(index) + pictureElement(index) + titleElement(index) + priceElement(index) + buttonElement();
+  listItem.appendChild(itemContent);
   catalogueList.appendChild(listItem);
 };
 

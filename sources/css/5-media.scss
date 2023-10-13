@@ -34,6 +34,7 @@
 
       &__list {
         padding-left: 32px;
+        gap: 42px;
       }
     }
 
@@ -52,6 +53,7 @@
     &__navigation {
       &__list {
         grid-column: 3 /-1;
+        gap: 76px;
       }
     }
   }
@@ -101,10 +103,6 @@
     &__list {
       grid-template-columns: repeat(3, 1fr);
 
-      &__item {
-        min-height: 511px;
-        justify-content: flex-start;
-      }
 
       &__item:nth-child(1) {
         grid-column: 1/ span 2;
@@ -133,6 +131,11 @@
       }
     }
 
+    &__item__content {
+      min-height: 511px;
+      justify-content: flex-start;
+    }
+
     &__item__title {
       margin-bottom: 35px;
     }
@@ -141,10 +144,10 @@
   .useful {
     &__list {
       grid-template-columns: repeat(3, 1fr);
+    }
 
-      &__item {
-        min-height: 456px;
-      }
+    &__item__content {
+      min-height: 456px;
     }
 
     &__item__descr {
@@ -250,6 +253,7 @@
 
       &__list {
         padding: 0;
+        gap: 35px;
       }
     }
 
@@ -265,6 +269,7 @@
 
       &__list {
         padding-left: 0;
+        gap: 40px;
       }
 
       .header__item__link {
@@ -300,6 +305,7 @@
       &__list {
         grid-column: 1 / -1;
         grid-row: 2;
+        gap: 38px;
       }
     }
 
@@ -501,7 +507,6 @@
   }
 
   .header {
-
     gap: 16px;
     padding-top: 12px;
     padding-bottom: 11px;
@@ -573,19 +578,18 @@
         gap: 25px;
         row-gap: 24px;
         padding-right: 6px;
+        min-width: 134px;
       }
-    }
-
-    &__list__item:nth-child(2n) {
-      min-width: 134px;
-    }
-
-    &__list__item:nth-child(3) {
-      min-width: 127px;
     }
 
     &__copyright {
       margin-top: 4px;
+    }
+
+    &__sublist,
+    &__list__item:nth-child(2),
+    &__list__item:nth-child(3) {
+      min-width: 134px;
     }
   }
 
@@ -628,10 +632,10 @@
     &__list {
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
+    }
 
-      &__item {
-        min-height: 350px;
-      }
+    &__item__content {
+      min-height: 350px;
     }
 
     &__item__title {
@@ -674,14 +678,8 @@
     &__list {
       column-gap: 16px;
 
-      &__item {
-        min-height: 206px;
-        position: relative;
-        width: fit-content;
-        padding: 16px;
-      }
 
-      &__item:nth-child(1) {
+      &__item:nth-child(1) .top-categories__item__content {
         min-height: 296px;
         padding: 30px;
         padding-bottom: 13px;
@@ -719,6 +717,10 @@
         .top-categories__item__btn {
           left: -10px;
         }
+
+        .top-categories__item__content {
+          min-height: 206px;
+        }
       }
 
       &__item:nth-child(3) {
@@ -745,6 +747,12 @@
           left: -10px;
         }
       }
+    }
+
+    &__item__content {
+      min-height: 206px;
+      position: relative;
+      padding: 16px;
     }
 
     &__item__img {
@@ -845,7 +853,6 @@
       margin-top: -3px;
     }
 
-
     &__title {
       grid-row: 1;
     }
@@ -858,10 +865,10 @@
       grid-row: 4 / span 3;
       gap: 16px;
       margin-top: 16px;
+    }
 
-      &__item {
-        min-height: 350px;
-      }
+    &__item__content {
+      min-height: 350px;
     }
 
     &__item__title {
@@ -982,14 +989,12 @@
       }
     }
 
-    &__list__item {
-      min-height: 350px;
+    &__list__item:nth-child(2) .product-card__item__img {
+      margin-bottom: 7px;
+    }
 
-      &:nth-child(2) {
-        .product-card__item__img {
-          margin-bottom: 7px;
-        }
-      }
+    &__item__content {
+      min-height: 350px;
     }
 
     &__item__title {
@@ -1024,6 +1029,7 @@
       padding: 0 16px;
       margin: 0 -16px 14px;
     }
+
   }
 
   .cooperation {
@@ -1119,7 +1125,7 @@
 
 @media (max-width: 440px) {
 
-  .high-rate__list__item {
+  .high-rate__item__content {
     min-height: 278px;
     padding: 0 16px 16px;
   }
@@ -1127,7 +1133,7 @@
   .footer {
     &__navigation {
       &__list {
-        column-gap: 13px;
+        column-gap: 21px;
       }
     }
   }
@@ -1143,14 +1149,12 @@
     }
   }
 
-  .catalogue {
-    &__list__item {
-      min-height: 278px;
-      padding: 0 16px 16px;
-    }
+  .catalogue__item__content {
+    min-height: 278px;
+    padding: 0 16px 16px;
   }
 
-  .product-card__list__item {
+  .product-card__item__content {
     min-height: 278px;
     padding: 0 16px 16px;
   }
