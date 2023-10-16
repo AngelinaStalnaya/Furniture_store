@@ -1,7 +1,7 @@
 
 // ***related list_item display logic***
-const relatedList = document.querySelector('.product-card__related__list');
-const relatedItems = relatedList.querySelectorAll('.product-card__list__item');
+const relatedList = document.querySelector('.product-card__relatedlist');
+const relatedItems = relatedList.querySelectorAll('.product-card__item');
 let relatedLimit;
 
 const getRelatedListLimit = () => {

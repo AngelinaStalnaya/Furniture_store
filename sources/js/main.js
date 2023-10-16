@@ -1,13 +1,13 @@
 // ***special_offers + high_rate + useful  list_item display logic***
 
 const specialOffersList = document.querySelector('.special-offers__list');
-const specialItems = specialOffersList.querySelectorAll('.special-offers__list__item');
+const specialItems = specialOffersList.querySelectorAll('.special-offers__item');
 let specialLimit;
 const highRateList = document.querySelector('.high-rate__list');
-const highItems = highRateList.querySelectorAll('.high-rate__list__item');
+const highItems = highRateList.querySelectorAll('.high-rate__item');
 let highLimit;
 const usefulList = document.querySelector('.useful__list');
-const usefulItems = usefulList.querySelectorAll('.useful__list__item');
+const usefulItems = usefulList.querySelectorAll('.useful__item');
 let usefulLimit;
 
 
@@ -90,9 +90,9 @@ const redirect = (pagename) => {
 
 };
 
-const specialBtns = document.querySelectorAll('.special-offers__item__btn');
-const highBtns = document.querySelectorAll('.high-rate__item__btn');
-const topBtns = document.querySelectorAll('.top-categories__item__btn');
+const specialBtns = document.querySelectorAll('.special-offers__btn');
+const highBtns = document.querySelectorAll('.high-rate__btn');
+const topBtns = document.querySelectorAll('.top-categories__btn');
 const advertiseBtn = document.querySelector('.advertise__btn');
 
 specialBtns.forEach(btn => btn.addEventListener('click', () => { redirect('product_card') }));

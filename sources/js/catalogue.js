@@ -7,10 +7,10 @@ const Data = JSON.parse(BDData);
 
 const divElement = (element) => {
   const divElem = document.createElement('div');
-  divElem.className = 'catalogue__item__rate';
-  divElem.innerHTML = '<svg class="catalogue__rate__svg"><use xlink:href="../img/sprite.svg#svg--star"></use></svg>';
+  divElem.className = 'item__rate rate catalogue__rate';
+  divElem.innerHTML = '<svg class="rate__svg catalogue__svg"><use xlink:href="../img/sprite.svg#svg--star"></use></svg>';
   const rateNum = document.createElement('p');
-  rateNum.className = 'catalogue__rate__num';
+  rateNum.className = 'rate__num catalogue__num';
   // change according the BD data:
   rateNum.innerHTML = `${Data[element].rate}`;
   divElem.appendChild(rateNum);
@@ -19,7 +19,7 @@ const divElement = (element) => {
 
 const pictureElement = (element) => {
   const pictureElem = document.createElement('picture');
-  pictureElem.className = 'catalogue__item__img';
+  pictureElem.className = 'item__img catalogue__img';
   const sourceElem = document.createElement('source');
   // change according the BD data:
   sourceElem.setAttribute('srcset', `../img/${Data[element].img}.png`);
@@ -36,7 +36,7 @@ const pictureElement = (element) => {
 
 const titleElement = (element) => {
   const titleElem = document.createElement('h3');
-  titleElem.className = 'catalogue__item__title';
+  titleElem.className = 'item__title catalogue__title catalogue__title_card';
   // change according the BD data:
   titleElem.innerHTML = `${Data[element].title}`;
   return titleElem.outerHTML;
@@ -44,7 +44,7 @@ const titleElement = (element) => {
 
 const priceElement = (element) => {
   const priceElem = document.createElement('p');
-  priceElem.className = 'catalogue__item__price';
+  priceElem.className = 'item__price catalogue__price';
   // change according the BD data:
   priceElem.innerHTML = `${Data[element].price} руб`;
   return priceElem.outerHTML;
@@ -52,16 +52,16 @@ const priceElement = (element) => {
 
 const buttonElement = () => {
   const buttonElem = document.createElement('button');
-  buttonElem.className = 'catalogue__item__btn';
+  buttonElem.className = 'item__btn catalogue__btn catalogue__btn_item';
   buttonElem.innerHTML = 'Купить';
   return buttonElem.outerHTML;
 };
 
 const addListItem = (index) => {
   const listItem = document.createElement('li');
-  listItem.className = 'catalogue__list__item';
+  listItem.className = 'item list__item list__item_card catalogue__item';
   const itemContent = document.createElement('article');
-  itemContent.classList = 'catalogue__item__content';
+  itemContent.classList = 'item__content catalogue__content';
   itemContent.innerHTML = divElement(index) + pictureElement(index) + titleElement(index) + priceElement(index) + buttonElement();
   listItem.appendChild(itemContent);
   catalogueList.appendChild(listItem);
@@ -76,7 +76,7 @@ for (let i = 0; i < Data.length; i++) {
 // ***catalogue pagination logics***
 
 const catalogueBtnsContainer = document.querySelector('.catalogue__pagination');
-const listItems = catalogueList.querySelectorAll('.catalogue__list__item');
+const listItems = catalogueList.querySelectorAll('.catalogue__item');
 let currentPage;
 
 // define a number of list_items for a page for different media:
@@ -93,7 +93,7 @@ const getPageCount = () => {
 const addPageNumber = (index) => {
   const catalogueBtnsContainer = document.querySelector('.catalogue__pagination');
   const pageNumber = document.createElement('button');
-  pageNumber.className = 'catalogue__pagination__btn';
+  pageNumber.className = 'catalogue__btn catalogue__btn_page';
   pageNumber.innerHTML = index;
   pageNumber.setAttribute('page-index', index);
   pageNumber.setAttribute('aria-label', "Page" + index);
@@ -116,12 +116,12 @@ const getPaginationNumbers = () => {
 
 // function to set active page number:
 const markActivePage = () => {
-  document.querySelectorAll('.catalogue__pagination__btn').forEach((button) => {
-    button.classList.remove('catalogue__pagination__btn-active');
+  document.querySelectorAll('.catalogue__btn_page').forEach((button) => {
+    button.classList.remove('catalogue__btn_page-active');
 
     const pageIndex = Number(button.getAttribute('page-index'));
     if (pageIndex == currentPage) {
-      button.classList.add('catalogue__pagination__btn-active');
+      button.classList.add('catalogue__btn_page-active');
     };
   });
 };
@@ -146,7 +146,7 @@ const setCurrentPage = (pageNumber) => {
 
 // function to move on clicked page:
 const moveToPage = () => {
-  document.querySelectorAll('.catalogue__pagination__btn').forEach((button) => {
+  document.querySelectorAll('.catalogue__btn_page').forEach((button) => {
     const pageIndex = Number(button.getAttribute('page-index'));
 
     if (pageIndex) {
@@ -182,8 +182,8 @@ const loadPage = (pagename) => {
 };
 
 
-const catalogueBtns = document.querySelectorAll('.catalogue__item__btn');
-const catalogueInfoBtn = document.querySelector('.catalogue__info__btn');
+const catalogueBtns = document.querySelectorAll('.catalogue__btn_item');
+const catalogueInfoBtn = document.querySelector('.catalogue__btn_info');
 
 catalogueBtns.forEach(btn => btn.addEventListener('click', () => { loadPage('product_card') }));
 catalogueInfoBtn.addEventListener('click', () => { loadPage('catalogue') });
