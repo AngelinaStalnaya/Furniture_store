@@ -1721,6 +1721,7 @@ body {
   &__list_services {
     flex-direction: column;
     gap: 12px;
+    align-items: flex-start;
   }
 
   &__item_services {

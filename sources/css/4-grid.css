@@ -1476,6 +1476,7 @@ body {
 .cooperation__list_services {
   flex-direction: column;
   gap: 12px;
+  align-items: flex-start;
 }
 .cooperation__item_services {
   display: flex;
