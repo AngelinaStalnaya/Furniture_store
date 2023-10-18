@@ -36,7 +36,7 @@ const pictureElement = (element) => {
 
 const titleElement = (element) => {
   const titleElem = document.createElement('h3');
-  titleElem.className = 'item__title catalogue__title catalogue__title_card';
+  titleElem.className = 'item__title item__title_card catalogue__title catalogue__title_card';
   // change according the BD data:
   titleElem.innerHTML = `${Data[element].title}`;
   return titleElem.outerHTML;
@@ -52,16 +52,16 @@ const priceElement = (element) => {
 
 const buttonElement = () => {
   const buttonElem = document.createElement('button');
-  buttonElem.className = 'item__btn catalogue__btn catalogue__btn_item';
+  buttonElem.className = 'btn btn_secondary item__btn catalogue__btn';
   buttonElem.innerHTML = 'Купить';
   return buttonElem.outerHTML;
 };
 
 const addListItem = (index) => {
   const listItem = document.createElement('li');
-  listItem.className = 'item list__item list__item_card catalogue__item';
+  listItem.className = 'item list__item catalogue__item';
   const itemContent = document.createElement('article');
-  itemContent.classList = 'item__content catalogue__content';
+  itemContent.classList = 'item__content item__content_card catalogue__content';
   itemContent.innerHTML = divElement(index) + pictureElement(index) + titleElement(index) + priceElement(index) + buttonElement();
   listItem.appendChild(itemContent);
   catalogueList.appendChild(listItem);
@@ -93,7 +93,7 @@ const getPageCount = () => {
 const addPageNumber = (index) => {
   const catalogueBtnsContainer = document.querySelector('.catalogue__pagination');
   const pageNumber = document.createElement('button');
-  pageNumber.className = 'catalogue__btn catalogue__btn_page';
+  pageNumber.className = 'btn btn_pagination catalogue__btn catalogue__btn_page';
   pageNumber.innerHTML = index;
   pageNumber.setAttribute('page-index', index);
   pageNumber.setAttribute('aria-label', "Page" + index);
@@ -117,11 +117,11 @@ const getPaginationNumbers = () => {
 // function to set active page number:
 const markActivePage = () => {
   document.querySelectorAll('.catalogue__btn_page').forEach((button) => {
-    button.classList.remove('catalogue__btn_page-active');
+    button.classList.remove('btn_pagination-active');
 
     const pageIndex = Number(button.getAttribute('page-index'));
     if (pageIndex == currentPage) {
-      button.classList.add('catalogue__btn_page-active');
+      button.classList.add('btn_pagination-active');
     };
   });
 };

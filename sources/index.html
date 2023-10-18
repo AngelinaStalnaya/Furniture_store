@@ -16,7 +16,7 @@
 
 <body>
   <div class="addition"></div>
-  <header class="header">
+  <header class="section section_settings section_padding header">
     <a href="tel:+74958854547" class="header__tel">
       <svg class="header__svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -28,22 +28,22 @@
     <nav class="nav header__nav">
       <ul class="list nav__list header__list">
         <li class="item list__item header__item">
-          <a href="#" class="item__link header__link">
+          <a href="#" class="item__link item__link_light header__link">
             О&nbsp;компании
           </a>
         </li>
         <li class="item list__item header__item">
-          <a href="#" class="item__link header__link">
+          <a href="#" class="item__link item__link_light header__link">
             Гарантия и&nbsp;возврат
           </a>
         </li>
         <li class="item list__item header__item">
-          <a href="#" class="item__link header__link">
+          <a href="#" class="item__link item__link_light header__link">
             Корпоративным клиентам
           </a>
         </li>
         <li class="item list__item header__item">
-          <a href="#" class="item__link header__link">
+          <a href="#" class="item__link item__link_light header__link">
             Дизайн-решение
           </a>
         </li>
@@ -55,34 +55,34 @@
       </svg>
     </a>
     <nav class="nav header__menu">
-      <ul class="list nav__list header__list">
-        <li class="item nav__item list__item header__item">
-          <a href="html/catalogue.html" class="item__link header__link">
+      <ul class="list nav__list header__list header__list_menu">
+        <li class="item list__item header__item">
+          <a href="html/catalogue.html" class="item__link item__link_basic header__link header__link_menu">
             Каталог
           </a>
         </li>
-        <li class="item nav__item list__item header__item">
-          <a href="#" class="item__link header__link">
+        <li class="item list__item header__item">
+          <a href="#" class="item__link item__link_basic header__link header__link_menu">
             Магазины
           </a>
         </li>
-        <li class="item nav__item list__item header__item">
-          <a href="#" class="item__link header__link">
+        <li class="item list__item header__item">
+          <a href="#" class="item__link item__link_basic header__link header__link_menu">
             Шоу-рум
           </a>
         </li>
-        <li class="item nav__item list__item header__item">
-          <a href="#" class="item__link header__link">
+        <li class="item list__item header__item">
+          <a href="#" class="item__link item__link_basic header__link header__link_menu">
             Доставка и&nbsp;оплата
           </a>
         </li>
-        <li class="item nav__item list__item header__item">
-          <a href="#" class="item__link header__link">
+        <li class="item list__item header__item">
+          <a href="#" class="item__link item__link_basic header__link header__link_menu">
             Дисконт
           </a>
         </li>
-        <li class="item nav__item list__item header__item">
-          <a href="#" class="item__link header__link">
+        <li class="item list__item header__item">
+          <a href="#" class="item__link item__link_basic header__link header__link_menu">
             Контакты
           </a>
         </li>
@@ -90,15 +90,15 @@
     </nav>
     <form class="form header__form" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
       <div class="form__wrapper header__wrapper">
-        <svg class="header__svg form__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+        <svg class="header__svg header__svg_search form__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M17.8187 16.0625L14.607 13.3156C15.5516 12.0945 16.0625 10.6016 16.0625 9.03125C16.0625 7.15156 15.3289 5.38906 14.0023 4.06016C12.6758 2.73125 10.9086 2 9.03125 2C7.15391 2 5.38672 2.73359 4.06016 4.06016C2.73125 5.38672 2 7.15156 2 9.03125C2 10.9086 2.73359 12.6758 4.06016 14.0023C5.38672 15.3312 7.15156 16.0625 9.03125 16.0625C10.6016 16.0625 12.0922 15.5516 13.3133 14.6094L16.5249 17.3539C16.5428 17.3718 16.564 17.3859 16.5873 17.3956C16.6106 17.4053 16.6356 17.4102 16.6609 17.4102C16.6861 17.4102 16.7111 17.4053 16.7344 17.3956C16.7578 17.3859 16.7789 17.3718 16.7968 17.3539L17.8187 16.3344C17.8365 16.3165 17.8507 16.2953 17.8604 16.272C17.87 16.2487 17.875 16.2237 17.875 16.1984C17.875 16.1732 17.87 16.1482 17.8604 16.1249C17.8507 16.1015 17.8365 16.0803 17.8187 16.0625ZM12.7438 12.7438C11.75 13.7352 10.4328 14.2812 9.03125 14.2812C7.62969 14.2812 6.3125 13.7352 5.31875 12.7438C4.32734 11.75 3.78125 10.4328 3.78125 9.03125C3.78125 7.62969 4.32734 6.31016 5.31875 5.31875C6.3125 4.32734 7.62969 3.78125 9.03125 3.78125C10.4328 3.78125 11.7523 4.325 12.7438 5.31875C13.7352 6.3125 14.2812 7.62969 14.2812 9.03125C14.2812 10.4328 13.7352 11.7523 12.7438 12.7438Z" />
         </svg>
-        <input type="search" class="header__input form__input" name="Filter" id="Search_filter"
+        <input type="search" class="header__input" name="Filter" id="Search_filter"
           placeholder="Я хочу купить...">
-        <button class="header__btn form__btn">
-          <svg class="header__svg form__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="btn header__btn form__btn">
+          <svg class="header__svg header__svg_btn form__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 11L19 16L14 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <circle cx="16" cy="16" r="15" stroke-width="2" />
           </svg>
@@ -126,22 +126,22 @@
   </header>
 
   <main class="main main-page">
-    <section class="hero">
+    <section class="section section_settings section_padding hero">
       <h1 class="hero__title">
         Скидка&nbsp;15% на&nbsp;первую покупку
       </h1>
-      <button class="hero__btn">
+      <button class="btn btn_primary hero__btn">
         Получить!
       </button>
     </section>
 
-    <section class="special-offers">
-      <h2 class="special-offers__title">
+    <section class="section section_settings section_padding special-offers">
+      <h2 class="section__title special-offers__title">
         Специальные предложения
       </h2>
       <ul class="list special-offers__list">
-        <li class="item list__item list__item_card special-offers__item">
-          <article class="item__content special-offers__content">
+        <li class="item list__item   special-offers__item">
+          <article class=" item__content item__content_card special-offers__content">
             <div class="item__pricetag special-offers__pricetag">
               <svg class="special-offers__svg" width="92" height="34">
                 <use xlink:href="img/sprite.svg#svg--price-bg"></use>
@@ -155,24 +155,24 @@
               <source srcset="img/so-1-1024.png" type="image/png" media="(min-width:993px)">
               <img src="img/so-1-1920.png" alt="Предмет со скидкой">
             </picture>
-            <h3 class="item__title special-offers__title special-offers__title_card">
+            <h3 class="item__title item__title_card special-offers__title special-offers__title_card">
               Кресло велюровое <br> “X-24”
             </h3>
             <div class="special-offers__prices" >
-              <p class="special-offers__price special-offers__price_newprice">
+              <p class="special-offers__prices special-offers__prices_newprice">
                 15 990 руб
               </p>
-              <p class="special-offers__price special-offers__price_oldprice">
+              <p class="special-offers__prices special-offers__prices_oldprice">
                 24 990 руб
               </p>
             </div>
-            <button class="item__btn special-offers__btn">
+            <button class="btn btn_secondary item__btn special-offers__btn">
               Купить
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card special-offers__item">
-          <article class="item__content special-offers__content">
+        <li class="item list__item   special-offers__item">
+          <article class=" item__content item__content_card special-offers__content">
             <div class="item__pricetag special-offers__pricetag">
               <svg class="special-offers__svg" width="92" height="34">
                 <use xlink:href="img/sprite.svg#svg--price-bg"></use>
@@ -186,25 +186,25 @@
               <source srcset="img/so-2-1024.png" type="image/png" media="(min-width:993px)">
               <img src="img/so-2-1920.png" alt="Предмет со скидкой">
             </picture>
-            <h3 class="item__title special-offers__title special-offers__title_card">
+            <h3 class="item__title item__title_card special-offers__title special-offers__title_card">
               Диван тканевый <br> “Z-44”
             </h3>
             <div class="special-offers__prices">
-              <p class="special-offers__price special-offers__price_newprice">
+              <p class="special-offers__prices special-offers__prices_newprice">
                 22 990 руб
               </p>
-              <p class="special-offers__price special-offers__price_oldprice">
+              <p class="special-offers__prices special-offers__prices_oldprice">
                 32 990 руб
               </p>
             </div>
-            <button class="item__btn special-offers__btn">
+            <button class="btn btn_secondary item__btn special-offers__btn">
               Купить
             </button>
             <img class="special-offers__ability" src="img/so-2-1-1920.png" alt="Функционал товара">
           </article>
         </li>
-        <li class="item list__item list__item_card special-offers__item">
-          <article class="item__content special-offers__content">
+        <li class="item list__item   special-offers__item">
+          <article class=" item__content item__content_card special-offers__content">
             <div class="item__pricetag special-offers__pricetag">
               <svg class="special-offers__svg" width="92" height="34">
                 <use xlink:href="img/sprite.svg#svg--price-bg"></use>
@@ -218,25 +218,25 @@
               <source srcset="img/so-3-1024.png" type="image/png" media="(min-width:993px)">
               <img src="img/so-3-1920.png" alt="Предмет со скидкой">
             </picture>
-            <h3 class="item__title special-offers__title special-offers__title_card">
+            <h3 class="item__title item__title_card special-offers__title special-offers__title_card">
               Будильник <br> “Quartz-23”
             </h3>
             <div class="special-offers__prices">
-              <p class="special-offers__price special-offers__price_newprice">
+              <p class="special-offers__prices special-offers__prices_newprice">
                 1 290 руб
               </p>
-              <p class="special-offers__price special-offers__price_oldprice">
+              <p class="special-offers__prices special-offers__prices_oldprice">
                 1 890 руб
               </p>
             </div>
-            <button class="item__btn special-offers__btn">
+            <button class="btn btn_secondary item__btn special-offers__btn">
               Купить
             </button>
           </article>
         </li>
 
-        <li class="item list__item list__item_card special-offers__item">
-          <article class="item__content special-offers__content">
+        <li class="item list__item   special-offers__item">
+          <article class=" item__content item__content_card special-offers__content">
             <div class="item__pricetag special-offers__pricetag">
               <svg class="special-offers__svg" width="92" height="34">
                 <use xlink:href="img/sprite.svg#svg--price-bg"></use>
@@ -245,26 +245,28 @@
                 -300
               </p>
             </div>
-            <img class="item__img special-offers__img" src="img/so-4-320.png" alt="Предмет со скидкой">
-
-            <h3 class="item__title special-offers__title special-offers__title_card">
+            <picture class="item__img special-offers__img">
+              <source srcset="img/so-4-320.png" type="image/png" media="(min-width:0px)">
+              <img src="img/so-4-320.png" alt="Предмет со скидкой">
+            </picture>
+            <h3 class="item__title item__title_card special-offers__title special-offers__title_card">
               Мини-скульптура <br> “Oh my deer”
             </h3>
             <div class="special-offers__prices">
-              <p class="special-offers__price special-offers__price_newprice">
+              <p class="special-offers__prices special-offers__prices_newprice">
                 690 руб
               </p>
-              <p class="special-offers__price special-offers__price_oldprice">
+              <p class="special-offers__prices special-offers__prices_oldprice">
                 990 руб
               </p>
             </div>
-            <button class="item__btn special-offers__btn">
+            <button class="btn btn_secondary item__btn special-offers__btn">
               Купить
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card special-offers__item">
-          <article class="item__content special-offers__content">
+        <li class="item list__item   special-offers__item">
+          <article class=" item__content item__content_card special-offers__content">
             <div class="item__pricetag special-offers__pricetag">
               <svg class="special-offers__svg" width="92" height="34">
                 <use xlink:href="img/sprite.svg#svg--price-bg"></use>
@@ -273,25 +275,28 @@
                 -10 000
               </p>
             </div>
-            <img class="item__img special-offers__img" src="img/so-5-320.png" alt="Предмет со скидкой">
-            <h3 class="item__title special-offers__title special-offers__title_card">
+            <picture class="item__img special-offers__img">
+              <source srcset="img/so-5-320.png" type="image/png" media="(min-width:0px)">
+              <img src="img/so-5-320.png" alt="Предмет со скидкой">
+            </picture>
+            <h3 class="item__title item__title_card special-offers__title special-offers__title_card">
               Диван вел-флок <br> “Z-85”
             </h3>
             <div class="special-offers__prices">
-              <p class="special-offers__price special-offers__price_newprice">
+              <p class="special-offers__prices special-offers__prices_newprice">
                 22 990 руб
               </p>
-              <p class="special-offers__price special-offers__price_oldprice">
+              <p class="special-offers__prices special-offers__prices_oldprice">
                 32 990 руб
               </p>
             </div>
-            <button class="item__btn special-offers__btn">
+            <button class="btn btn_secondary item__btn special-offers__btn">
               Купить
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card special-offers__item">
-          <article class="item__content special-offers__content">
+        <li class="item list__item   special-offers__item">
+          <article class=" item__content item__content_card special-offers__content">
             <div class="item__pricetag special-offers__pricetag">
               <svg class="special-offers__svg" width="92" height="34">
                 <use xlink:href="img/sprite.svg#svg--price-bg"></use>
@@ -300,19 +305,22 @@
                 -700
               </p>
             </div>
-            <img class="item__img special-offers__img" src="img/so-6-320.png" alt="Предмет со скидкой">
-            <h3 class="item__title special-offers__title special-offers__title_card">
+            <picture class="item__img special-offers__img">
+              <source srcset="img/so-6-320.png" type="image/png" media="(min-width:0px)">
+              <img src="img/so-5-320.png" alt="Предмет со скидкой">
+            </picture>
+            <h3 class="item__title item__title_card special-offers__title special-offers__title_card">
               Термометр + гидрометр “H-18”
             </h3>
             <div class="special-offers__prices">
-              <p class="special-offers__price special-offers__price_newprice">
+              <p class="special-offers__prices special-offers__prices_newprice">
                 1 390 руб
               </p>
-              <p class="special-offers__price special-offers__price_oldprice">
+              <p class="special-offers__prices special-offers__prices_oldprice">
                 2 090 руб
               </p>
             </div>
-            <button class="item__btn special-offers__btn">
+            <button class="btn btn_secondary item__btn special-offers__btn">
               Купить
             </button>
           </article>
@@ -320,13 +328,13 @@
       </ul>
     </section>
 
-    <section class="high-rate">
-      <h2 class="high-rate__title">
+    <section class="section section_settings section_padding high-rate">
+      <h2 class="section__title high-rate__title">
         Высокий рейтинг
       </h2>
       <ul class="list high-rate__list">
-        <li class="item list__item list__item_card high-rate__item">
-          <article class="item__content high-rate__content">
+        <li class="item list__item   high-rate__item">
+          <article class=" item__content item__content_card high-rate__content">
             <div class="item__rate rate high-rate__rate">
               <svg class="rate__svg high-rate__svg">
                 <use xlink:href="img/sprite.svg#svg--star"></use>
@@ -338,19 +346,19 @@
               <source srcset="img/hr-1-320.png" type="image/png" media="(min-width:0px)">
               <img src="img/hr-1-1920.png" alt="Фото товара">
             </picture>
-            <h3 class="item__title high-rate__title high-rate__title_card">
+            <h3 class="item__title item__title_card high-rate__title high-rate__title_card">
               Диван кожаный <br> “R-94”
             </h3>
             <p class="item__price high-rate__price">
               94 990 руб
             </p>
-            <button class="item__btn high-rate__btn">
+            <button class="btn btn_secondary item__btn high-rate__btn">
               Купить
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card high-rate__item">
-          <article class="item__content high-rate__content">
+        <li class="item list__item   high-rate__item">
+          <article class=" item__content item__content_card high-rate__content">
             <div class="item__rate rate high-rate__rate">
               <svg class="rate__svg high-rate__svg">
                 <use xlink:href="img/sprite.svg#svg--star"></use>
@@ -362,19 +370,19 @@
               <source srcset="img/hr-2-320.png" type="image/png" media="(min-width:0px)">
               <img src="img/hr-2-1920.png" alt="Фото товара">
             </picture>
-            <h3 class="item__title high-rate__title high-rate__title_card">
+            <h3 class="item__title item__title_card high-rate__title high-rate__title_card">
               Диван апартековый <br> “T-75”
             </h3>
             <p class="item__price high-rate__price">
               69 990 руб
             </p>
-            <button class="item__btn high-rate__btn">
+            <button class="btn btn_secondary item__btn high-rate__btn">
               Купить
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card high-rate__item">
-          <article class="item__content high-rate__content">
+        <li class="item list__item   high-rate__item">
+          <article class=" item__content item__content_card high-rate__content">
             <div class="item__rate rate high-rate__rate">
               <svg class="rate__svg high-rate__svg">
                 <use xlink:href="img/sprite.svg#svg--star"></use>
@@ -386,19 +394,19 @@
               <source srcset="img/hr-3-320.png" type="image/png" media="(min-width:0px)">
               <img src="img/hr-3-1920.png" alt="Фото товара">
             </picture>
-            <h3 class="item__title high-rate__title high-rate__title_card">
+            <h3 class="item__title item__title_card high-rate__title high-rate__title_card">
               Диван тканевый <br> “D-31”
             </h3>
             <p class="item__price high-rate__price">
               28 490 руб
             </p>
-            <button class="item__btn high-rate__btn">
+            <button class="btn btn_secondary item__btn high-rate__btn">
               Купить
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card high-rate__item">
-          <article class="item__content high-rate__content">
+        <li class="item list__item   high-rate__item">
+          <article class=" item__content item__content_card high-rate__content">
             <div class="item__rate rate high-rate__rate">
               <svg class="rate__svg high-rate__svg">
                 <use xlink:href="img/sprite.svg#svg--star"></use>
@@ -410,19 +418,19 @@
               <source srcset="img/hr-4-320.png" type="image/png" media="(min-width:0px)">
               <img src="img/hr-4-1920.png" alt="Фото товара">
             </picture>
-            <h3 class="item__title high-rate__title high-rate__title_card">
+            <h3 class="item__title item__title_card high-rate__title high-rate__title_card">
               Диван велюровый <br> “Y-68”
             </h3>
             <p class="item__price high-rate__price">
               22 990 руб
             </p>
-            <button class="item__btn high-rate__btn">
+            <button class="btn btn_secondary item__btn high-rate__btn">
               Купить
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card high-rate__item">
-          <article class="item__content high-rate__content">
+        <li class="item list__item   high-rate__item">
+          <article class=" item__content item__content_card high-rate__content">
             <div class="item__rate rate high-rate__rate">
               <svg class="rate__svg high-rate__svg">
                 <use xlink:href="img/sprite.svg#svg--star"></use>
@@ -434,19 +442,19 @@
               <source srcset="img/hr-5-320.png" type="image/png" media="(min-width:0px)">
               <img src="img/hr-5-1920.png" alt="Фото товара">
             </picture>
-            <h3 class="item__title high-rate__title high-rate__title_card">
+            <h3 class="item__title item__title_card high-rate__title high-rate__title_card">
               Диван из шинила <br> “W-95”
             </h3>
             <p class="item__price high-rate__price">
               22 990 руб
             </p>
-            <button class="item__btn high-rate__btn">
+            <button class="btn btn_secondary item__btn high-rate__btn">
               Купить
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card high-rate__item">
-          <article class="item__content high-rate__content">
+        <li class="item list__item   high-rate__item">
+          <article class=" item__content item__content_card high-rate__content">
             <div class="item__rate rate high-rate__rate">
               <svg class="rate__svg high-rate__svg">
                 <use xlink:href="img/sprite.svg#svg--star"></use>
@@ -458,53 +466,59 @@
               <source srcset="img/hr-6-320.png" type="image/png" media="(min-width:0px)">
               <img src="img/hr-6-1920.png" alt="Фото товара">
             </picture>
-            <h3 class="item__title high-rate__title high-rate__title_card">
+            <h3 class="item__title item__title_card high-rate__title high-rate__title_card">
               Диван флоковый <br> “G-41”
             </h3>
             <p class="item__price high-rate__price">
               17 990 руб
             </p>
-            <button class="item__btn high-rate__btn">
+            <button class="btn btn_secondary item__btn high-rate__btn">
               Купить
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card high-rate__item">
-          <article class="item__content high-rate__content">
+        <li class="item list__item   high-rate__item">
+          <article class=" item__content item__content_card high-rate__content">
             <div class="item__rate rate high-rate__rate">
               <svg class="rate__svg high-rate__svg">
                 <use xlink:href="img/sprite.svg#svg--star"></use>
               </svg>
               <p class="rate__num high-rate__num">4.8</p>
             </div>
-            <img class="item__img high-rate__img" src="img/hr-7-1920.png" alt="Фото товара">
-            <h3 class="item__title high-rate__title high-rate__title_card">
+            <picture class="item__img high-rate__img">
+              <source srcset="img/hr-7-1920.png" type="image/png" media="(min-width:0px)">
+              <img src="img/hr-7-1920.png" alt="Фото товара">
+            </picture>
+            <h3 class="item__title item__title_card high-rate__title high-rate__title_card">
               Диван шиниловый <br> “V-43”
             </h3>
             <p class="item__price high-rate__price">
               19 990 руб
             </p>
-            <button class="item__btn high-rate__btn">
+            <button class="btn btn_secondary item__btn high-rate__btn">
               Купить
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card high-rate__item">
-          <article class="item__content high-rate__content">
+        <li class="item list__item   high-rate__item">
+          <article class=" item__content item__content_card high-rate__content">
             <div class="item__rate rate high-rate__rate">
               <svg class="rate__svg high-rate__svg">
                 <use xlink:href="img/sprite.svg#svg--star"></use>
               </svg>
               <p class="rate__num high-rate__num">4.7</p>
             </div>
-            <img class="item__img high-rate__img" src="img/hr-8-1920.png" alt="Фото товара">
-            <h3 class="item__title high-rate__title high-rate__title_card">
+            <picture class="item__img high-rate__img">
+              <source srcset="img/hr-8-1920.png" type="image/png" media="(min-width:0px)">
+              <img src="img/hr-8-1920.png" alt="Фото товара">
+            </picture>
+            <h3 class="item__title item__title_card high-rate__title high-rate__title_card">
               Диван велюровый <br> “S-99”
             </h3>
             <p class="item__price high-rate__price">
               19 990 руб
             </p>
-            <button class="item__btn high-rate__btn">
+            <button class="btn btn_secondary item__btn high-rate__btn">
               Купить
             </button>
           </article>
@@ -512,37 +526,37 @@
       </ul>
     </section>
 
-    <section class="advertise">
+    <section class="section section_settings section_padding advertise">
       <h2 class="advertise__title">
         <b class="advertise__title advertise__title_special">Оксфорд 1950</b>
         Новая коллекция изысканных кресел
       </h2>
-      <button class="advertise__btn">
+      <button class="btn btn_primary advertise__btn">
         Ознакомиться
       </button>
     </section>
 
-    <section class="top-categories">
-      <h2 class="top-categories__title">
+    <section class="section section_settings section_padding top-categories">
+      <h2 class="section__title top-categories__title">
         Топ категории
       </h2>
       <ul class="list top-categories__list">
-        <li class="item list__item list__item_card top-categories__item">
-          <article class="item__content top-categories__content">
-            <ul class="item__sublist sublist top-categories__sublist">
-              <li class="item sublist__item top-categories__item"><a href="#" class="item__link top-categories__link">Прямые</a></li>
-              <li class="item sublist__item top-categories__item"><a href="#" class="item__link top-categories__link">Угловые</a></li>
-              <li class="item sublist__item top-categories__item"><a href="#" class="item__link top-categories__link">Модульные</a>
+        <li class="item list__item   top-categories__item">
+          <article class="item__content item__content_card top-categories__content">
+            <ul class="list item__sublist sublist top-categories__sublist">
+              <li class="item sublist__item top-categories__item"><a href="#" class="item__link item__link_light top-categories__link top-categories__link_main">Прямые</a></li>
+              <li class="item sublist__item top-categories__item"><a href="#" class="item__link item__link_light top-categories__link top-categories__link_main">Угловые</a></li>
+              <li class="item sublist__item top-categories__item"><a href="#" class="item__link item__link_light top-categories__link top-categories__link_main">Модульные</a>
               </li>
             </ul>
-            <h3 class="item__title top-categories__title top-categories__title_card">Диваны</h3>
+            <h3 class="item__title item__title_card top-categories__title top-categories__title_card">Диваны</h3>
             <picture class="item__img top-categories__img">
               <source srcset="img/top-1-1920.png" type="image/png" media="(min-width:1441px)">
               <source srcset="img/top-1-1024.png" type="image/png" media="(min-width:441px)">
               <source srcset="img/top-1-320.png" type="image/png" media="(min-width:0px)">
               <img src="img/top-1-1920.png" alt="Диван">
             </picture>
-            <button class="item__btn top-categories__btn">
+            <button class="btn btn_arrow item__btn top-categories__btn">
               В каталог
               <svg class="item__svg top-categories__svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -556,22 +570,22 @@
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card top-categories__item">
-          <article class="item__content top-categories__content">
-            <ul class="item__sublist sublist top-categories__sublist">
-              <li class="item sublist__item top-categories__item"><a href="#" class="item__link top-categories__link">Мягкие</a></li>
+        <li class="item list__item   top-categories__item">
+          <article class=" item__content item__content_card top-categories__content">
+            <ul class="list item__sublist sublist top-categories__sublist">
+              <li class="item sublist__item top-categories__item"><a href="#" class="item__link item__link_light top-categories__link">Мягкие</a></li>
               <li class="item sublist__item top-categories__item"><a href="#"
-                  class="item__link top-categories__link">Кресла-кровати</a>
+                  class="item__link item__link_light top-categories__link">Кресла-кровати</a>
               </li>
             </ul>
-            <h3 class="item__title top-categories__title top-categories__title_card">Кресла</h3>
+            <h3 class="item__title item__title_card top-categories__title top-categories__title_card">Кресла</h3>
             <picture class="item__img top-categories__img">
               <source srcset="img/top-2-1920.png" type="image/png" media="(min-width:1441px)">
               <source srcset="img/top-2-1024.png" type="image/png" media="(min-width:441px)">
               <source srcset="img/top-2-320.png" type="image/png" media="(min-width:0px)">
               <img src="img/top-2-1920.png" alt="Кресло">
             </picture>
-            <button class="item__btn top-categories__btn">
+            <button class="btn btn_arrow item__btn top-categories__btn">
               В каталог
               <svg class="item__svg top-categories__svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -585,22 +599,22 @@
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card top-categories__item">
-          <article class="item__content top-categories__content">
-            <ul class="item__sublist sublist top-categories__sublist">
-              <li class="item sublist__item top-categories__item"><a href="#" class="item__link top-categories__link">Односпальные</a>
+        <li class="item list__item   top-categories__item">
+          <article class=" item__content item__content_card top-categories__content">
+            <ul class="list item__sublist sublist top-categories__sublist">
+              <li class="item sublist__item top-categories__item"><a href="#" class="item__link item__link_light top-categories__link">Односпальные</a>
               </li>
-              <li class="item sublist__item top-categories__item"><a href="#" class="item__link top-categories__link">Двуспальные</a>
+              <li class="item sublist__item top-categories__item"><a href="#" class="item__link item__link_light top-categories__link">Двуспальные</a>
               </li>
             </ul>
-            <h3 class="item__title top-categories__title top-categories__title_card">Кровати</h3>
+            <h3 class="item__title item__title_card top-categories__title top-categories__title_card">Кровати</h3>
             <picture class="item__img top-categories__img">
               <source srcset="img/top-3-1920.png" type="image/png" media="(min-width:1441px)">
               <source srcset="img/top-3-1024.png" type="image/png" media="(min-width:441px)">
               <source srcset="img/top-3-320.png" type="image/png" media="(min-width:0px)">
               <img src="img/top-3-1920.png" alt="Кровать">
             </picture>
-            <button class="item__btn top-categories__btn">
+            <button class="btn btn_arrow item__btn top-categories__btn">
               В каталог
               <svg class="item__svg top-categories__svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -614,20 +628,20 @@
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card top-categories__item">
-          <article class="item__content top-categories__content">
-            <ul class="item__sublist sublist top-categories__sublist">
-              <li class="item sublist__item top-categories__item"><a href="#" class="item__link top-categories__link">Тумбы</a></li>
-              <li class="item sublist__item top-categories__item"><a href="#" class="item__link top-categories__link">Комоды</a></li>
+        <li class="item list__item   top-categories__item">
+          <article class=" item__content item__content_card top-categories__content">
+            <ul class="list item__sublist sublist top-categories__sublist">
+              <li class="item sublist__item top-categories__item"><a href="#" class="item__link item__link_light top-categories__link">Тумбы</a></li>
+              <li class="item sublist__item top-categories__item"><a href="#" class="item__link item__link_light top-categories__link">Комоды</a></li>
             </ul>
-            <h3 class="item__title top-categories__title top-categories__title_card">Тумбы и&nbsp;комоды</h3>
+            <h3 class="item__title item__title_card top-categories__title top-categories__title_card">Тумбы и&nbsp;комоды</h3>
             <picture class="item__img top-categories__img">
               <source srcset="img/top-4-1920.png" type="image/png" media="(min-width:1441px)">
               <source srcset="img/top-4-1024.png" type="image/png" media="(min-width:441px)">
               <source srcset="img/top-4-320.png" type="image/png" media="(min-width:0px)">
               <img src="img/top-4-1920.png" alt="Тумба">
             </picture>
-            <button class="item__btn top-categories__btn">
+            <button class="btn btn_arrow item__btn top-categories__btn">
               В каталог
               <svg class="item__svg top-categories__svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -641,22 +655,22 @@
             </button>
           </article>
         </li>
-        <li class="item list__item list__item_card top-categories__item">
-          <article class="item__content top-categories__content">
-            <ul class="item__sublist sublist top-categories__sublist">
-              <li class="item sublist__item top-categories__item"><a href="#" class="item__link top-categories__link">Деревянные</a>
+        <li class="item list__item   top-categories__item">
+          <article class=" item__content item__content_card top-categories__content">
+            <ul class="list item__sublist sublist top-categories__sublist">
+              <li class="item sublist__item top-categories__item"><a href="#" class="item__link item__link_light top-categories__link">Деревянные</a>
               </li>
-              <li class="item sublist__item top-categories__item"><a href="#" class="item__link top-categories__link">Металлокаркас</a>
+              <li class="item sublist__item top-categories__item"><a href="#" class="item__link item__link_light top-categories__link">Металлокаркас</a>
               </li>
             </ul>
-            <h3 class="item__title top-categories__title top-categories__title_card">Стулья</h3>
+            <h3 class="item__title item__title_card top-categories__title top-categories__title_card">Стулья</h3>
             <picture class="item__img top-categories__img">
               <source srcset="img/top-5-1920.png" type="image/png" media="(min-width:1441px)">
               <source srcset="img/top-5-1024.png" type="image/png" media="(min-width:441px)">
               <source srcset="img/top-5-320.png" type="image/png" media="(min-width:0px)">
               <img src="img/top-5-1920.png" alt="Стулья">
             </picture>
-            <button class="item__btn top-categories__btn">
+            <button class="btn btn_arrow item__btn top-categories__btn">
               В каталог
               <svg class="item__svg top-categories__svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -673,13 +687,13 @@
       </ul>
     </section>
 
-    <section class="useful">
-      <h2 class="useful__title">
+    <section class="section section_settings section_padding useful">
+      <h2 class="section__title useful__title">
         Полезное
       </h2>
       <ul class="list useful__list">
         <li class="item list__item useful__item">
-          <article class="item__content useful__content">
+          <article class=" item__content item__content_card useful__content">
             <picture class="item__img useful__img">
               <source srcset="img/useful-1-1920.jpg" type="image/jpg" media="(min-width:1441px)">
               <source srcset="img/useful-1-1024.jpg" type="image/jpg" media="(min-width:993px)">
@@ -690,11 +704,11 @@
             <p class="item__descr useful__descr">
               И нет сомнений, что сделанные на базе интернет-аналитики выводы представляют собой нечто иное?
             </p>
-            <button class="item__btn useful__btn">Читать</button>
+            <button class="btn btn_secondary item__btn useful__btn">Читать</button>
           </article>
         </li>
         <li class="item list__item useful__item">
-          <article class="item__content useful__content">
+          <article class=" item__content item__content_card useful__content">
             <picture class="item__img useful__img">
               <source srcset="img/useful-2-1920.jpg" type="image/jpg" media="(min-width:1441px)">
               <source srcset="img/useful-2-1024.jpg" type="image/jpg" media="(min-width:993px)">
@@ -705,12 +719,12 @@
             <p class="item__descr useful__descr">
               Как принято считать, некоторые особенности приносят несомненную пользу обществу?
             </p>
-            <button class="item__btn useful__btn">Читать</button>
+            <button class="btn btn_secondary item__btn useful__btn">Читать</button>
           </article>
         </li>
 
         <li class="item list__item useful__item">
-          <article class="item__content useful__content">
+          <article class=" item__content item__content_card useful__content">
             <picture class="item__img useful__img">
               <source srcset="img/useful-3-1024.jpg" type="image/jpg" media="(min-width:993px)">
               <source srcset="img/useful-3-320.jpg" type="image/jpg" media="(min-width:0px)">
@@ -719,13 +733,13 @@
             <p class="item__descr useful__descr">
               Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?
             </p>
-            <button class="item__btn useful__btn">Читать</button>
+            <button class="btn btn_secondary item__btn useful__btn">Читать</button>
           </article>
 
         </li>
 
         <li class="item list__item useful__item">
-          <article class="item__content useful__content">
+          <article class=" item__content item__content_card useful__content">
             <picture class="item__img useful__img">
               <source srcset="img/useful-4-320.jpg" type="image/jpg" media="(min-width:0px)">
               <img src="img/useful-4-320.jpg" alt="Интерьер">
@@ -733,11 +747,11 @@
             <p class="item__descr useful__descr">
               Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?
             </p>
-            <button class="item__btn useful__btn">Читать</button>
+            <button class="btn btn_secondary item__btn useful__btn">Читать</button>
           </article>
         </li>
         <li class="item list__item useful__item">
-          <article class="item__content useful__content">
+          <article class=" item__content item__content_card useful__content">
             <picture class="item__img useful__img">
               <source srcset="img/useful-5-320.jpg" type="image/jpg" media="(min-width:0px)">
               <img src="img/useful-5-320.jpg" alt="Интерьер">
@@ -745,19 +759,19 @@
             <p class="item__descr useful__descr">
               Как принято считать, некоторые особенности приносят несомненную пользу обществу?
             </p>
-            <button class="item__btn useful__btn">Читать</button>
+            <button class="btn btn_secondary item__btn useful__btn">Читать</button>
           </article>
         </li>
       </ul>
     </section>
 
-    <section class="contact">
+    <section class="section section_settings section_padding contact">
       <form class="form contact__form" action="https://jsonplaceholder.typicode.com/posts" method="post"
         aria-label="Заполнение формы-заявки">
-        <h2 class="form__title contact__title">
+        <h2 class="section__title form__title contact__title">
           Мы&nbsp;всегда вам рады!
         </h2>
-        <p class="form__descr contact__descr">
+        <p class="section__descr form__descr contact__descr">
           Безусловно, новая модель организационной деятельности в&nbsp;значительной степени обусловливает важность
           распределения внутренних резервов и&nbsp;ресурсов.
         </p>
@@ -767,7 +781,7 @@
           <input type="email" class="form__input contact__input contact__input_email" name="Email" placeholder="Ваш e-mail" id="Email">
         </div>
         <div class="form__wrapper contact__wrapper contact__wrapper_btn">
-          <button class="form__btn contact__btn">Отправить</button>
+          <button class="btn btn_primary form__btn contact__btn">Отправить</button>
           <label class="form__checkbox contact__checkbox">
             <input class="form__input contact__input contact__input_checkbox" type="checkbox" required>
             <svg class="form__svg contact__svg contact__svg_custom" width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -795,7 +809,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__navigation">
+    <div class="section section_settings section_padding footer__navigation">
       <a href="#" class="logo footer__logo">
         <svg class="footer__svg logo__svg">
           <use xlink:href="img/sprite.svg#svg--logo"></use>
@@ -818,40 +832,40 @@
         </a>
       </div>
       <ul class="list footer__list">
-        <li class="item list__item footer__item">
-          <ul class="item__sublist sublist footer__sublist">
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link footer__link_title">О нас</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">О компании</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Блог</a></li>
+        <li class="item list__item footer__item footer__item_outer">
+          <ul class="list item__sublist sublist footer__sublist">
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_basic footer__link footer__link_title">О нас</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">О компании</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Блог</a></li>
           </ul>
         </li>
-        <li class="item list__item footer__item">
-          <ul class="item__sublist sublist footer__sublist">
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link footer__link_title">Услуги</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Доставка</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Рассрочка и кредит</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Сборка и установка</a></li>
+        <li class="item list__item footer__item footer__item_outer">
+          <ul class="list item__sublist sublist footer__sublist">
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_basic footer__link footer__link_title">Услуги</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Доставка</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Рассрочка и кредит</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Сборка и установка</a></li>
           </ul>
         </li>
-        <li class="item list__item footer__item">
-          <ul class="item__sublist sublist footer__sublist">
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link footer__link_title">Связь с нами</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Обратная связь</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Контакты</a></li>
+        <li class="item list__item footer__item footer__item_outer">
+          <ul class="list item__sublist sublist footer__sublist">
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_basic footer__link footer__link_title">Связь с нами</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Обратная связь</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Контакты</a></li>
           </ul>
         </li>
-        <li class="item list__item footer__item">
-          <ul class="item__sublist sublist footer__sublist">
-            <li class="item sublist__item footer__item"><a href="html/cooperation.html"
-                class="item__link footer__link footer__link_title">Сотрудничество</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Поставщикам</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Оптовикам</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Карьера</a></li>
+        <li class="item list__item footer__item footer__item_outer">
+          <ul class="list item__sublist sublist footer__sublist">
+            <li class="item sublist__item footer__item footer__item_inner"><a href="html/cooperation.html"
+                class="item__link item__link_basic footer__link footer__link_title">Сотрудничество</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Поставщикам</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Оптовикам</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Карьера</a></li>
           </ul>
         </li>
       </ul>
     </div>
-    <p class="footer__copyright">
+    <p class="section section_padding footer__copyright">
       SDP® 2011-2021
     </p>
   </footer>

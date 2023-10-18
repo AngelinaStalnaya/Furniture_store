@@ -16,7 +16,7 @@
 
 <body>
   <div class="addition"></div>
-  <header class="header">
+  <header class="section section_settings section_padding header">
     <a href="tel:+74958854547" class="header__tel">
       <svg class="header__svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -28,22 +28,22 @@
     <nav class="nav header__nav">
       <ul class="list nav__list header__list">
         <li class="item list__item header__item">
-          <a href="#" class="item__link header__link">
+          <a href="#" class="item__link item__link_light header__link">
             О&nbsp;компании
           </a>
         </li>
         <li class="item list__item header__item">
-          <a href="#" class="item__link header__link">
+          <a href="#" class="item__link item__link_light header__link">
             Гарантия и&nbsp;возврат
           </a>
         </li>
         <li class="item list__item header__item">
-          <a href="#" class="item__link header__link">
+          <a href="#" class="item__link item__link_light header__link">
             Корпоративным клиентам
           </a>
         </li>
         <li class="item list__item header__item">
-          <a href="#" class="item__link header__link">
+          <a href="#" class="item__link item__link_light header__link">
             Дизайн-решение
           </a>
         </li>
@@ -51,38 +51,38 @@
     </nav>
     <a href="#" class="logo header__logo">
       <svg class="header__svg logo__svg">
-        <use xlink:href="img/sprite.svg#svg--logo"></use>
+        <use xlink:href="../img/sprite.svg#svg--logo"></use>
       </svg>
     </a>
     <nav class="nav header__menu">
-      <ul class="list nav__list header__list">
-        <li class="item nav__item list__item header__item">
-          <a href="catalogue.html" class="item__link header__link">
+      <ul class="list nav__list header__list header__list_menu">
+        <li class="item list__item header__item">
+          <a href="catalogue.html" class="item__link item__link_basic header__link header__link_menu">
             Каталог
           </a>
         </li>
-        <li class="item nav__item list__item header__item">
-          <a href="#" class="item__link header__link">
+        <li class="item list__item header__item">
+          <a href="#" class="item__link item__link_basic header__link header__link_menu">
             Магазины
           </a>
         </li>
-        <li class="item nav__item list__item header__item">
-          <a href="#" class="item__link header__link">
+        <li class="item list__item header__item">
+          <a href="#" class="item__link item__link_basic header__link header__link_menu">
             Шоу-рум
           </a>
         </li>
-        <li class="item nav__item list__item header__item">
-          <a href="#" class="item__link header__link">
+        <li class="item list__item header__item">
+          <a href="#" class="item__link item__link_basic header__link header__link_menu">
             Доставка и&nbsp;оплата
           </a>
         </li>
-        <li class="item nav__item list__item header__item">
-          <a href="#" class="item__link header__link">
+        <li class="item list__item header__item">
+          <a href="#" class="item__link item__link_basic header__link header__link_menu">
             Дисконт
           </a>
         </li>
-        <li class="item nav__item list__item header__item">
-          <a href="#" class="item__link header__link">
+        <li class="item list__item header__item">
+          <a href="#" class="item__link item__link_basic header__link header__link_menu">
             Контакты
           </a>
         </li>
@@ -90,15 +90,15 @@
     </nav>
     <form class="form header__form" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
       <div class="form__wrapper header__wrapper">
-        <svg class="header__svg form__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+        <svg class="header__svg header__svg_search form__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M17.8187 16.0625L14.607 13.3156C15.5516 12.0945 16.0625 10.6016 16.0625 9.03125C16.0625 7.15156 15.3289 5.38906 14.0023 4.06016C12.6758 2.73125 10.9086 2 9.03125 2C7.15391 2 5.38672 2.73359 4.06016 4.06016C2.73125 5.38672 2 7.15156 2 9.03125C2 10.9086 2.73359 12.6758 4.06016 14.0023C5.38672 15.3312 7.15156 16.0625 9.03125 16.0625C10.6016 16.0625 12.0922 15.5516 13.3133 14.6094L16.5249 17.3539C16.5428 17.3718 16.564 17.3859 16.5873 17.3956C16.6106 17.4053 16.6356 17.4102 16.6609 17.4102C16.6861 17.4102 16.7111 17.4053 16.7344 17.3956C16.7578 17.3859 16.7789 17.3718 16.7968 17.3539L17.8187 16.3344C17.8365 16.3165 17.8507 16.2953 17.8604 16.272C17.87 16.2487 17.875 16.2237 17.875 16.1984C17.875 16.1732 17.87 16.1482 17.8604 16.1249C17.8507 16.1015 17.8365 16.0803 17.8187 16.0625ZM12.7438 12.7438C11.75 13.7352 10.4328 14.2812 9.03125 14.2812C7.62969 14.2812 6.3125 13.7352 5.31875 12.7438C4.32734 11.75 3.78125 10.4328 3.78125 9.03125C3.78125 7.62969 4.32734 6.31016 5.31875 5.31875C6.3125 4.32734 7.62969 3.78125 9.03125 3.78125C10.4328 3.78125 11.7523 4.325 12.7438 5.31875C13.7352 6.3125 14.2812 7.62969 14.2812 9.03125C14.2812 10.4328 13.7352 11.7523 12.7438 12.7438Z" />
         </svg>
-        <input type="search" class="header__input form__input" name="Filter" id="Search_filter"
+        <input type="search" class="header__input" name="Filter" id="Search_filter"
           placeholder="Я хочу купить...">
-        <button class="header__btn form__btn">
-          <svg class="header__svg form__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="btn header__btn form__btn">
+          <svg class="header__svg header__svg_btn form__svg" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 11L19 16L14 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <circle cx="16" cy="16" r="15" stroke-width="2" />
           </svg>
@@ -125,45 +125,47 @@
     </div>
   </header>
 
-  <main class="main cooperation">
-    <p class="cooperation__root">
-      <a href="../index.html" class="link cooperation__link">Главная</a> / <a href="#"
-        class="link cooperation__link">Сотрудничество</a>
+
+  <main class="section section_settings section_padding main cooperation">
+    <p class="section__title cooperation__root">
+      <a href="../index.html" class="link link_light cooperation__link">Главная</a> / <a href="#"
+        class="link link_light cooperation__link">Сотрудничество</a>
     </p>
-    <h1 class="cooperation__title">Сотрудничество</h1>
+    <h1 class="section__title cooperation__title">Сотрудничество</h1>
     <div class="cooperation__providers">
-      <h2 class="cooperation__title cooperation__title_providers">Поставщикам</h2>
-      <p class="cooperation__descr">При планировании обстановки торгового помещения важно обустроить его с
-        комфортом для
-        покупателей: грамотно зонировать, обеспечить эффективную демонстрацию и хранение товаров в зале. Если вам
+      <h2 class="section__title cooperation__title cooperation__title_parts">Поставщикам</h2>
+      <p class="section__descr cooperation__descr cooperation__descr_providers">
+        При планировании обстановки торгового помещения важно обустроить его с
+        комфортом для покупателей: грамотно зонировать, обеспечить эффективную демонстрацию и хранение товаров в зале. Если вам
         необходимо комплексное оснащение, организация зоны отдыха или отдельные предметы меблировки для поддержания
-        эффективной торговой деятельности, мы поможем выбрать продукцию с учетом нагрузки от поступающего трафика.</p>
+        эффективной торговой деятельности, мы поможем выбрать продукцию с учетом нагрузки от поступающего трафика.
+      </p>
     </div>
     <div class="cooperation__services">
-      <h2 class="cooperation__title cooperation__title_services">Что вы получаете?</h2>
+      <h2 class="section__title cooperation__title cooperation__title_parts">Что вы получаете?</h2>
       <ul class="list cooperation__list cooperation__list_services">
-        <li class="item list__item cooperation__item">
+        <li class="item list__item cooperation__item cooperation__item_services">
           <svg class="item__svg cooperation__svg">
             <use xlink:href="../img/sprite.svg#svg--network"></use>
           </svg>
-          <p class="item__descr cooperation__descr">
+          <p class="section__descr item__descr cooperation__descr cooperation__descr_services">
             Мы ценим идеи и вдохновение и предлагаем сотрудничество талантливым дизайнерам и архитекторам. Выпускаемая
             нами продукция гармонично дополнит любой современный проект.
           </p>
         </li>
-        <li class="item list__item cooperation__item">
+        <li class="item list__item cooperation__item cooperation__item_services">
           <svg class="item__svg cooperation__svg">
             <use xlink:href="../img/sprite.svg#svg--briefcase"></use>
           </svg>
-          <p class="item__descr cooperation__descr">
+          <p class="section__descr item__descr cooperation__descr cooperation__descr_services">
             Комплексное решение для красивого и функционального обустройства любых пространств.
           </p>
         </li>
-        <li class="item list__item cooperation__item">
+        <li class="item list__item cooperation__item cooperation__item_services">
           <svg class="item__svg cooperation__svg">
             <use xlink:href="../img/sprite.svg#svg--git-pull-request"></use>
           </svg>
-          <p class="item__descr cooperation__descr">
+          <p class="section__descr item__descr cooperation__descr cooperation__descr_services">
             В ассортименте представлены все товарные группы для того, чтобы воссоздать обстановку в помещениях разных
             типов: кабинетах, смешанных пространствах, Open Space, гостевых и переговорных комнатах.
           </p>
@@ -171,22 +173,22 @@
       </ul>
     </div>
     <div class="cooperation__benefits">
-      <h2 class="cooperation__title cooperation__title_benefits">
+      <h2 class="section__title cooperation__title cooperation__title_parts cooperation__title_benefits">
         Ваши преимущества от сотрудничества
       </h2>
       <ul class="list cooperation__list cooperation__list_benefits">
-        <li class="item list__item cooperation__item">
-          <h3 class="item__title cooperation__title cooperation__title_steps">Возможность 1:</h3>
-          <p class="item__descr cooperation__descr">
+        <li class="item list__item cooperation__item cooperation__item_benefits">
+          <h3 class="section__title item__title cooperation__title cooperation__title_steps">Возможность 1:</h3>
+          <p class="section__descr item__descr cooperation__descr cooperation__descr_benefits">
             Создавайте незабываемые впечатления. Красиво меблированная фотостудия не оставит клиентов равнодушными, а
             созданная интерьером атмосфера будет надолго запечатлена на их снимках. Стильная и разноплановая обстановка
             творческого пространства – ключевая составляющая его успешной деятельности. Позаботьтесь о людях в кадре, а
             мы поможем правильно выбрать мебель.
           </p>
         </li>
-        <li class="item list__item cooperation__item">
-          <h3 class="item__title cooperation__title cooperation__title_steps">Возможность 2:</h3>
-          <p class="item__descr cooperation__descr">
+        <li class="item list__item cooperation__item cooperation__item_benefits">
+          <h3 class="section__title item__title cooperation__title cooperation__title_steps">Возможность 2:</h3>
+          <p class="section__descr item__descr cooperation__descr cooperation__descr_benefits">
             Мы предлагаем застройщикам, работающим на территории РФ, участие наших специалистов от этапа проектирования
             обстановки квартир и подбора комплексных интерьерных решений до оптовых поставок мебели. Поможем
             организовать демонстрационный зал с образцами изделий и материалов на площади нового здания, чтобы
@@ -197,14 +199,14 @@
       </ul>
     </div>
     <div class="cooperation__guarantees">
-      <h2 class="cooperation__title cooperation__title_guarantees">Гарантии</h2>
+      <h2 class="section__title cooperation__title cooperation__title_parts cooperation__title_guarantees">Гарантии</h2>
       <ol class="list cooperation__list cooperation__list_guarantees">
-        <li class="item list__item cooperation__item">
+        <li class="item list__item section__descr cooperation__item cooperation__item_guarantees">
           При приемке товара Покупатель должен внимательно проверить его количество, качество и ассортимент на
           соответствие сопроводительным документам и заказу. После подписания товарного чека Покупатель утрачивает право
           предъявления претензий, которые можно выявить при приемке товара.
         </li>
-        <li class="item list__item cooperation__item">
+        <li class="item list__item section__descr cooperation__item cooperation__item_guarantees">
           На товары, сборка которых производилась покупателем самостоятельно (не специалистами
           Продавца), гарантийные обязательства Продавца не распространяются. Также гарантия не распространяется на
           повреждения товара, полученные в ходе самостоятельной доставки и подъема товара. Покупатель не вправе
@@ -212,7 +214,7 @@
           быть
           использован исключительно приобретающим его потребителем.
         </li>
-        <li class="item list__item cooperation__item">
+        <li class="item list__item section__descr cooperation__item cooperation__item_guarantees">
           Возврат или обмен товара возможен при условии, что сохранена упаковка, товарный вид и
           потребительские свойства товара, а также товарный и кассовый чеки. В этом случае мы гарантируем вам возврат
           полной стоимости товара (за вычетом стоимости доставки). В случае отказа от товара при доставке, клиент
@@ -222,16 +224,16 @@
     </div>
     <div class="cooperation__note">
       <img class="cooperation__img cooperation__img_note" src="../img/pencil.png" alt="Карандаш">
-      <p class="cooperation__descr">Срок гарантии на нашу мебель составляет от 18 до 60 месяцев</p>
+      <p class="section__descr cooperation__descr cooperation__descr_note">Срок гарантии на нашу мебель составляет от 18 до 60 месяцев</p>
     </div>
 
   </main>
 
   <footer class="footer">
-    <div class="footer__navigation">
+    <div class="section section_settings section_padding footer__navigation">
       <a href="#" class="logo footer__logo">
         <svg class="footer__svg logo__svg">
-          <use xlink:href="img/sprite.svg#svg--logo"></use>
+          <use xlink:href="../img/sprite.svg#svg--logo"></use>
         </svg>
       </a>
       <div class="footer__social social">
@@ -251,45 +253,39 @@
         </a>
       </div>
       <ul class="list footer__list">
-        <li class="item list__item footer__item">
-          <ul class="item__sublist sublist footer__sublist">
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link footer__link_title">О
-                нас</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">О компании</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Блог</a></li>
+        <li class="item list__item footer__item footer__item_outer">
+          <ul class="list item__sublist sublist footer__sublist">
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_basic footer__link footer__link_title">О нас</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">О компании</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Блог</a></li>
           </ul>
         </li>
-        <li class="item list__item footer__item">
-          <ul class="item__sublist sublist footer__sublist">
-            <li class="item sublist__item footer__item"><a href="#"
-                class="item__link footer__link footer__link_title">Услуги</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Доставка</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Рассрочка и
-                кредит</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Сборка и
-                установка</a></li>
+        <li class="item list__item footer__item footer__item_outer">
+          <ul class="list item__sublist sublist footer__sublist">
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_basic footer__link footer__link_title">Услуги</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Доставка</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Рассрочка и кредит</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Сборка и установка</a></li>
           </ul>
         </li>
-        <li class="item list__item footer__item">
-          <ul class="item__sublist sublist footer__sublist">
-            <li class="item sublist__item footer__item"><a href="#"
-                class="item__link footer__link footer__link_title">Связь с нами</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Обратная связь</a>
-            </li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Контакты</a></li>
+        <li class="item list__item footer__item footer__item_outer">
+          <ul class="list item__sublist sublist footer__sublist">
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_basic footer__link footer__link_title">Связь с нами</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Обратная связь</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Контакты</a></li>
           </ul>
         </li>
-        <li class="item list__item footer__item">
-          <ul class="item__sublist sublist footer__sublist">
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link footer__link_title">Сотрудничество</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Поставщикам</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Оптовикам</a></li>
-            <li class="item sublist__item footer__item"><a href="#" class="item__link footer__link">Карьера</a></li>
+        <li class="item list__item footer__item footer__item_outer">
+          <ul class="list item__sublist sublist footer__sublist">
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_basic footer__link footer__link_title">Сотрудничество</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Поставщикам</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Оптовикам</a></li>
+            <li class="item sublist__item footer__item footer__item_inner"><a href="#" class="item__link item__link_light footer__link">Карьера</a></li>
           </ul>
         </li>
       </ul>
     </div>
-    <p class="footer__copyright">
+    <p class="section section_padding footer__copyright">
       SDP® 2011-2021
     </p>
   </footer>
