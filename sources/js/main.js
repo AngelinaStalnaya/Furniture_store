@@ -1,60 +1,101 @@
-const mainPageContent = document.querySelector('.main_page');
-const catalogueContent = document.querySelector('.catalogue');
-const productCardContent = document.querySelector('.product_card');
-const cooperationContent = document.querySelector('.cooperation');
-const pages = [mainPageContent, catalogueContent, productCardContent, cooperationContent];
+// ***special_offers + high_rate + useful  list_item display logic***
 
-function loadPage(pageClass) {
-  for (let i = 0; i < pages.length; i++) {
-    pages[i].style.display = 'none';
-  };
+const specialOffersList = document.querySelector('.special-offers__list');
+const specialItems = specialOffersList.querySelectorAll('.special-offers__item');
+let specialLimit;
+const highRateList = document.querySelector('.high-rate__list');
+const highItems = highRateList.querySelectorAll('.high-rate__item');
+let highLimit;
+const usefulList = document.querySelector('.useful__list');
+const usefulItems = usefulList.querySelectorAll('.useful__item');
+let usefulLimit;
 
+
+const getSpecialListLimit = () => {
+  const screenWidth = window.screen.width;
   switch (true) {
-    case pageClass == '.main_page':
-      document.title = 'Главная';
-      mainPageContent.style.display = 'grid';
+    case screenWidth > 992:
+      specialLimit = 3;
       break;
-    case pageClass == '.catalogue':
-      document.title = 'Каталог';
-      catalogueContent.style.display = 'grid';
+    case screenWidth > 720 && screenWidth <= 992:
+      specialLimit = 2;
       break;
-    case pageClass == '.product_card':
-      document.title = 'Карточка товара';
-      productCardContent.style.display = 'grid';
-      break;
-    case pageClass == '.cooperation':
-      document.title = 'Сотрудничество';
-      cooperationContent.style.display = 'grid';
-      break;
-    default:
+    case screenWidth <= 720:
+      specialLimit = 6;
       break;
   };
+  return specialLimit;
 };
 
-const catalogueBtn = document.getElementById('load_catalogue');
-catalogueBtn.addEventListener('click', () => {loadPage('.catalogue')});
+const getHighListLimit = () => {
+  const screenWidth = window.screen.width;
+  if (screenWidth > 1440) {
+    return 8;
+  } else {
+    return 6;
+  };
+}
 
-const productBtns = document.querySelectorAll('.item__btn');
-productBtns.forEach(productBtn => productBtn.addEventListener('click', () => { loadPage('.product_card') }));
+const getUsefulListLimit = () => {
+  const screenWidth = window.screen.width;
+  switch (true) {
+    case screenWidth > 1440:
+      usefulLimit = 2;
+      break;
+    case screenWidth > 992 && screenWidth <= 1440:
+      usefulLimit = 3;
+      break;
+    case screenWidth > 720 && screenWidth <= 992:
+      usefulLimit = 2;
+      break;
+    case screenWidth <= 720:
+      usefulLimit = 5;
+      break;
+  };
+  return usefulLimit;
+};
 
-const cooperationBtn = document.getElementById('load_cooperation');
-cooperationBtn.addEventListener('click', () => {loadPage('.cooperation')});
 
-const headerLogo = document.querySelector('.header__logo');
-headerLogo.addEventListener('click', () => {loadPage('.main_page')});
+const displayItems = () => {
+  specialItems.forEach(specialItem => specialItem.style.display = 'none');
+  highItems.forEach(highItem => highItem.style.display = 'none');
+  usefulItems.forEach(usefulItem => usefulItem.style.display = 'none');
 
-const footerLogo = document.querySelector('.footer__logo');
-footerLogo.addEventListener('click', () => {loadPage('.main_page')});
+  for (let i = 0; i < getSpecialListLimit(); i++) {
+    specialItems[i].style.display = 'flex';
+  };
 
-const categoryList = document.querySelector('.top_categories__list');
-const categoryBtns = categoryList.querySelectorAll('.item__btn');
-categoryBtns.forEach(categoryBtn => categoryBtn.addEventListener('click', () => {loadPage('.catalogue')}));
+  for (let i = 0; i < getHighListLimit(); i++) {
+    highItems[i].style.display = 'flex';
+  }
 
-const usefulList = document.querySelector('.useful__list');
-const usefulBtns = usefulList.querySelectorAll('.item__btn');
-usefulBtns.forEach(usefulBtn => usefulBtn.addEventListener('click', () => {loadPage('.main_page')}));
+  for (let i = 0; i < getUsefulListLimit(); i++) {
+    usefulItems[i].style.display = 'flex';
+  }
+};
 
+window.addEventListener('resize', () => {
+  displayItems();
+});
 
 window.addEventListener('load', () => {
-  loadPage('.main_page');
+  displayItems();
 });
+
+
+// *** button event listener***
+
+const redirect = (pagename) => {
+  window.location.pathname = `html/${pagename}.html`;
+
+};
+
+const specialBtns = document.querySelectorAll('.special-offers__btn');
+const highBtns = document.querySelectorAll('.high-rate__btn');
+const topBtns = document.querySelectorAll('.top-categories__btn');
+const advertiseBtn = document.querySelector('.advertise__btn');
+
+specialBtns.forEach(btn => btn.addEventListener('click', () => { redirect('product_card') }));
+highBtns.forEach(btn => btn.addEventListener('click', () => { redirect('product_card') }));
+topBtns.forEach(btn => btn.addEventListener('click', () => { redirect('catalogue') }));
+advertiseBtn.addEventListener('click', () => { redirect('catalogue') });

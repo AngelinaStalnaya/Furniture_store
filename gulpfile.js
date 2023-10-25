@@ -56,19 +56,17 @@ const svgSprites = () => {
 
 const scripts = () => {
   return src([
-    'sources/js/components/**/*.js',
-    'sources/js/main.js'
+    'sources/js/**/*.js'
   ])
     .pipe((mode.development(sourcemaps.init())))
     .pipe(babel({
       presets: ['@babel/env']
     }))
-    .pipe(concat('app.js'))
     .pipe(mode.production(uglify({
       toplevel: true,
     })).on('error', notify.onError()))
     .pipe((mode.development(sourcemaps.write())))
-    .pipe(dest('dist'))
+    .pipe(dest('dist/js'))
     .pipe(browserSync.stream())
 };
 
