@@ -1,22 +1,48 @@
 @import "_variables.scss";
 
 body {
-  margin: 0 auto;
-  max-width: 1920px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.site-content {
   display: grid;
   grid-template-areas:
     "addition"
     "header"
     "main"
     "footer";
-  font-family: 'Open Sans', sans-serif;
   background-color: $white;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   position: relative;
 }
 
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+
+  @media (max-width: 1440px) {
+    width: 952px;
+  }
+
+  @media (max-width: 992px) {
+    width: 624px;
+  }
+
+  @media (max-width: 650px) {
+    width: 396px;
+  }
+
+  @media (max-width: 440px) {
+    width: 296px;
+  }
+}
+
 // common
+
 
 .section_settings {
   display: grid;
@@ -30,26 +56,6 @@ body {
 
   @media (max-width: 992px) {
     grid-template-columns: repeat(6, 1fr);
-  }
-}
-
-.section_padding {
-  padding-left: 320px;
-  padding-right: 320px;
-
-  @media (max-width: 1440px) {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
-
-  @media (max-width: 992px) {
-    padding-left: 72px;
-    padding-right: 72px;
-  }
-
-  @media (max-width: 560px) {
-    padding-left: 12px;
-    padding-right: 12px;
   }
 }
 
@@ -92,7 +98,6 @@ body {
 }
 
 .item__title_card {
-  // subsection title
   margin: 0;
   padding: 0;
   color: $black;
@@ -788,9 +793,14 @@ body {
     grid-row: 1;
     padding-top: 24px;
     padding-bottom: 21px;
-    row-gap: 26px;
+
     background-color: $md_grey;
     align-items: flex-start;
+  }
+
+  &__container {
+    grid-column: 1/ -1;
+    row-gap: 26px;
   }
 
   &__logo {
@@ -870,6 +880,10 @@ body {
   align-items: center;
   margin-top: 30px;
 
+  &__container {
+    grid-column: 1 / -1;
+  }
+
   &__title {
     margin: 0;
     padding: 0;
@@ -880,6 +894,7 @@ body {
     align-self: flex-start;
     grid-column: 1 / span 5;
     grid-row: 1;
+    margin-bottom: 15px;
   }
 
   &__btn {
@@ -1012,7 +1027,7 @@ body {
   }
 
   &__title_card {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     max-width: 266px;
   }
 
@@ -1033,6 +1048,9 @@ body {
   padding-bottom: 150px;
   align-items: center;
 
+  &__container {
+    grid-column: 1 / -1;
+  }
 
   &__title {
     margin: 0;
@@ -1044,6 +1062,7 @@ body {
     align-self: flex-start;
     grid-column: 1 / span 5;
     grid-row: 1;
+    margin-bottom: 15px;
 
     &_special {
       color: $gold;
