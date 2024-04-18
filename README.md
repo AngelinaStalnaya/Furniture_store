@@ -1,4 +1,6 @@
-# Final diploma project for Weblayout course.
+# SitDownPlease store
+
+## Final diploma project for Weblayout course.
 
 - Consists of three parts: main landing page, cataloque, product card page;
 - Clear adaptive semantic layout landing for desktop, laptop and mobile;
