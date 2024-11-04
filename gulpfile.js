@@ -19,7 +19,7 @@ const clean = () => {
 };
 
 const styles = () => {
-  return src('sources/css/**/*.css')
+  return src('docs/css/**/*.css')
     .pipe((mode.development(sourcemaps.init())))
     .pipe(concat('main.css'))
     .pipe(autoprefixer({
@@ -34,7 +34,7 @@ const styles = () => {
 };
 
 const htmlMinify = () => {
-  return src('sources/**/*.html')
+  return src('docs/**/*.html')
     .pipe((mode.production(htmlMin({
       collapseWhitespace: true,
     }))))
@@ -43,7 +43,7 @@ const htmlMinify = () => {
 };
 
 const svgSprites = () => {
-  return src('sources/img/**/*.svg')
+  return src('docs/img/**/*.svg')
     .pipe(svgSprite({
       mode: {
         stack: {
@@ -56,7 +56,7 @@ const svgSprites = () => {
 
 const scripts = () => {
   return src([
-    'sources/js/**/*.js'
+    'docs/js/**/*.js'
   ])
     .pipe((mode.development(sourcemaps.init())))
     .pipe(babel({
@@ -74,24 +74,24 @@ const scripts = () => {
 
 const images = () => {
   return src([
-    'sources/img/**/*.png',
-    'sources/img/**/*.jpg',
-    'sources/img/**/*.jpeg'
+    'docs/img/**/*.png',
+    'docs/img/**/*.jpg',
+    'docs/img/**/*.jpeg'
   ])
     .pipe(image())
     .pipe(dest('dist/img'))
 }
 
 const svgmin = () => {
-  return src('sources/img/*.svg')
+  return src('docs/img/*.svg')
     .pipe(svgMin())
     .pipe(dest('dist/img'))
 }
 
 const fonts = () => {
   return src([
-    'sources/fonts/**/*.woff2',
-    'sources/fonts/**/*.woff'
+    'docs/fonts/**/*.woff2',
+    'docs/fonts/**/*.woff'
   ])
     .pipe((mode.development(sourcemaps.init())))
     .pipe((mode.development(sourcemaps.write())))
@@ -107,16 +107,16 @@ const watchFiles = () => {
   })
 };
 
-watch('sources/**/*.html', htmlMinify);
-watch('sources/css/**/*.css', styles);
-watch('sources/img/svg/**/*.svg', svgSprites);
-watch('sources/img/**/*.png', images);
-watch('sources/img/**/*.jpg', images);
-watch('sources/img/**/*.jpeg', images);
-watch('sources/img/*.svg', images);
-watch('sources/js/**/*.js', scripts);
-watch('sources/fonts/**/*.woff2', fonts);
-watch('sources/fonts/**/*.woff', fonts);
+watch('docs/**/*.html', htmlMinify);
+watch('docs/css/**/*.css', styles);
+watch('docs/img/svg/**/*.svg', svgSprites);
+watch('docs/img/**/*.png', images);
+watch('docs/img/**/*.jpg', images);
+watch('docs/img/**/*.jpeg', images);
+watch('docs/img/*.svg', images);
+watch('docs/js/**/*.js', scripts);
+watch('docs/fonts/**/*.woff2', fonts);
+watch('docs/fonts/**/*.woff', fonts);
 
 exports.styles = styles;
 exports.scripts = scripts;
