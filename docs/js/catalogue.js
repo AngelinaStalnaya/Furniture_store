@@ -164,7 +164,7 @@ window.addEventListener('load', function () {
 // *** button event listener**
 
 var loadPage = function loadPage(pagename) {
-  window.location.pathname = "html/".concat(pagename, ".html");
+  window.location.pathname = "Furniture_store/".concat(pagename);
 };
 var catalogueBtns = document.querySelectorAll('.catalogue__btn_item');
 var catalogueInfoBtn = document.querySelector('.catalogue__btn_info');
