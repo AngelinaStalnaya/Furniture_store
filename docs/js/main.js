@@ -86,7 +86,7 @@ window.addEventListener('load', function () {
 // *** button event listener***
 
 var redirect = function redirect(pagename) {
-  window.location.pathname = "/".concat(pagename);
+  window.location.pathname = "Furniture_store/".concat(pagename);
 };
 var specialBtns = document.querySelectorAll('.special-offers__btn');
 var highBtns = document.querySelectorAll('.high-rate__btn');
